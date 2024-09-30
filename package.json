@@ -1,0 +1,29 @@
+{
+  "name": "site",
+  "version": "3.0.0",
+  "description": "tobiasbu's website project",
+  "type": "module",
+  "engines": {
+    "node": ">=20.x.x"
+  },
+  "scripts": {
+    "start": "ELEVENTY_ENV=development && eleventy --serve"
+  },
+  "keywords": [
+    "site",
+    "website",
+    "portfolio",
+    "tobiasbu",
+    "tbu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasbu/site.git"
+  },
+  "homepage": "https://github.com/tobiasbu",
+  "author": "Tobias Ulrich",
+  "license": "WTFPL",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0-beta.1"
+  }
+}
