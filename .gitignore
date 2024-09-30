@@ -1,0 +1,12 @@
+# Node modules
+node_modules
+
+# generated files
+_site
+dist
+
+# cache
+.cache
+
+# secret data
+.env
