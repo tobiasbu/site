@@ -1,0 +1,19 @@
+
+
+/* Fix for Android Chrome font boosting */
+html * { max-height: 1000000px; }
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  
+  text-size-adjust: none;
+  font-family: var(--tob-font-family);
+  font-size: var(--tob-font-size-base);
+  line-height: var(--tob-line-height);
+  background-color: var(--tob-color-bg);
+  color: var(--tob-color-text);
+
+  scroll-behavior: smooth;
+}
