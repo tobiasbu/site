@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import postcss from 'postcss';
 import postcssImport from 'postcss-import';
+import postcssCustomMedia from 'postcss-custom-media';
 
 const INPUT_STYLES_DIR = "src/styles"
 const OUTPUT_STYLES_DIR = "dist"
@@ -27,6 +28,7 @@ const cssConfig = eleventyConfig => {
       return async () => {
         let result = await postcss([
           postcssImport,
+          postcssCustomMedia,
           autoprefixer,
           cssnano
         ]).process(inputContent, {from: inputPath});
