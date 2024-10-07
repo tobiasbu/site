@@ -1,4 +1,7 @@
 
+html {
+  color-scheme: light dark;
+}
 
 /* Fix for Android Chrome font boosting */
 html * { max-height: 1000000px; }
@@ -9,11 +12,16 @@ html, body{
   margin: 0;
   
   text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
   font-family: var(--tob-font-family);
-  font-size: var(--tob-font-size-base);
+  font-size: var(--tob-base-font-size);
+  font-weight: var(--tob-weight-regular);
   line-height: var(--tob-line-height);
   background-color: var(--tob-color-bg);
   color: var(--tob-color-text);
+}
 
-  scroll-behavior: smooth;
 }

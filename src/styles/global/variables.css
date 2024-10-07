@@ -1,0 +1,45 @@
+
+:root {
+  /* FONT */
+  --tob-font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+  --tob-base-font-size: 16px;
+
+  /* FONT SIZE */
+  --tob-font-size-xs: 0.6rem;
+  --tob-font-size-s: 0.762rem;
+  --tob-font-size: 1rem;
+  --tob-font-size-large: 1.75rem;
+
+  /* FONT WEIGHTS */
+  --tob-weight-regular: 300;
+  --tob-weight-bold: 600;
+
+  /* LINE HEIGHT */
+  --tob-line-height-tight: 1;
+  --tob-line-height: 1.5;
+
+   /* SPACING */
+  --tob-space-s: 0.8rem;
+  --tob-space-16: 1rem;
+  --tob-space-24: 1.5rem;
+  --tob-space-32: 2rem;
+  --tob-space-64: 4rem;
+
+  /* VIEWS */
+  --tob-view-max: 64rem; /* 1024px */
+}
+
+/* MEDIA QUERIES */
+@custom-media --tob-media-view-max (max-width: var(--tob-view-max));
+
+/* THEMES */
+:root,
+:root[data-theme='light'] {
+  --tob-color-bg: #fafafa;
+  --tob-color-accent: #fa0077;
+  --tob-color-dark: #1D272D;
+  --tob-color-text: var(--tob-color-dark);
+  --tob-color-hover: var(--tob-color-dark);
+  --tob-color-meta: #929292;
+  --tob-color-gray: #656565;
+}
