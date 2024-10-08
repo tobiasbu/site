@@ -1,0 +1,22 @@
+<header>
+  <div class="tob-header__wrapper">
+    <div class="tob-header__inner">
+
+      <a class="tob-logo">
+        <div class="tob-logo__container">
+          <img class="tob-logo__tree" src="assets/img/logo.png" />
+        </div>
+        <h1>tobiasbu</h1>
+      </a>
+      <nav>
+        <ul>
+      {% for page in navigation.top %}
+        <li>
+          <a href="{{page.url}}">{{page.text}}</a>
+        </li>
+      {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
