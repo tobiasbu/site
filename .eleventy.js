@@ -1,4 +1,5 @@
 import plugins from './src/config/plugins.js';
+import shortcodes from './src/config/shortcodes.js';
 
 const INPUT_DIR = "src";
 
@@ -13,6 +14,9 @@ export default async function(eleventyConfig) {
 
   // add plugins
   eleventyConfig.addPlugin(plugins.cssConfig);
+
+  // add shortcodes
+  eleventyConfig.addShortcode('svg', shortcodes.svg);
 
   // copy images
   eleventyConfig.addPassthroughCopy('src/assets/img')
