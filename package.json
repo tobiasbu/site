@@ -7,7 +7,8 @@
     "node": ">=20.x.x"
   },
   "scripts": {
-    "start": "ELEVENTY_ENV=development && eleventy --serve"
+    "clean": "rm -rf ./dist",
+    "start": "npm run clean && ELEVENTY_ENV=development eleventy --serve --watch"
   },
   "keywords": [
     "site",
@@ -24,9 +25,10 @@
   "author": "Tobias Ulrich",
   "license": "WTFPL",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0-beta.1",
+    "@11ty/eleventy": "^3.0.0",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
+    "esbuild": "^0.24.0",
     "postcss": "^8.4.47",
     "postcss-custom-media": "^11.0.2",
     "postcss-import": "^16.1.0",

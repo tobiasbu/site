@@ -10,3 +10,6 @@ dist
 
 # secret data
 .env
+
+# compiled js code
+src/includes/js/*

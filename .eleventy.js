@@ -14,9 +14,13 @@ export default async function(eleventyConfig) {
 
   // add plugins
   eleventyConfig.addPlugin(plugins.cssConfig);
+  eleventyConfig.addPlugin(plugins.jsConfig);
 
   // add shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svg);
+
+  // add bundles
+  eleventyConfig.addBundle("js");
 
   // copy images
   eleventyConfig.addPassthroughCopy('src/assets/img')
