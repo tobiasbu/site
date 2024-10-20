@@ -16,11 +16,11 @@
           <a href="{{page.url}}">{{page.text}}</a>
         </li>
       {% endfor %}
+        <li>
+          {% include './theme-switcher.njk' %}
+        </li>
         </ul>
       </nav>
-
-      {% include './theme-switcher.njk' %}
-
     </div>
   </div>
 </header>

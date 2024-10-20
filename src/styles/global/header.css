@@ -57,7 +57,8 @@ h1 {
 /* TOP NAV  */
 
 nav {
-  margin-left: var(--tob-space-48);
+  font-family: "Tiny5", monospace;
+  font-size: 24px;
 }
 
 nav ul {
@@ -69,6 +70,7 @@ nav ul {
   display: flex;
   align-items: center;
   gap: var(--tob-space-48);
+  line-height: 0;
 }
 
 nav a {
@@ -81,7 +83,7 @@ nav a {
   width: 32px;
   height: 32px;
   line-height: 0;
-  padding: 0;
+  padding: 4px;
   background: transparent;
   border: none;
   cursor: pointer;
