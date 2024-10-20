@@ -14,8 +14,9 @@ header {
 .tob-header__inner {
   display: flex;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
   padding: 0 var(--tob-space-32);
+  position: relative;
 }
 
 /* LOGO */
@@ -68,4 +69,29 @@ nav ul {
   display: flex;
   align-items: center;
   gap: var(--tob-space-48);
+}
+
+nav a {
+  padding: 4px;
+}
+
+/* THEME SWITCHER */
+
+.tob-theme-switcher {
+  width: 32px;
+  height: 32px;
+  line-height: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+[data-theme="dark"] .tob-theme-switcher .tob-theme-dark-icon {
+  display: none;
+}
+
+[data-theme="light"] .tob-theme-switcher .tob-theme-light-icon {
+  display: none;
 }

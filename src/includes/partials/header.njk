@@ -6,8 +6,9 @@
         <div class="tob-logo__container">
           <img class="tob-logo__tree" src="assets/img/logo.png" />
         </div>
-        <h1>tobiasbu</h1>
+        {# <h1>tobiasbu</h1> #}
       </a>
+
       <nav>
         <ul>
       {% for page in navigation.top %}
@@ -17,6 +18,9 @@
       {% endfor %}
         </ul>
       </nav>
+
+      {% include './theme-switcher.njk' %}
+
     </div>
   </div>
 </header>
