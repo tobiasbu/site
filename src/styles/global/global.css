@@ -43,3 +43,8 @@ a, button {
   }
 }
 
+.tob-wrapper {
+  margin: auto;
+  max-width: var(--tob-view-max);
+  padding: 0 var(--tob-space-32);
+}

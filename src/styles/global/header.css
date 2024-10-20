@@ -6,16 +6,10 @@ header {
   padding: var(--tob-space-32) 0;
 }
 
-.tob-header__wrapper {
-  margin: auto;
-  max-width: var(--tob-view-max);
-}
-
-.tob-header__inner {
+.tob-header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--tob-space-32);
   position: relative;
 }
 
@@ -47,17 +41,10 @@ a.tob-logo {
   display: block;
 }
 
-h1 {
-  font-weight: var(--tob-weight-bold);
-  font-size: var(--tob-font-size-large);
-  line-height: var(--tob-line-height-tight);
-  margin: 0;
-}
-
 /* TOP NAV  */
 
 nav {
-  font-family: "Tiny5", monospace;
+  font-family: var(--tob-font-family-pixelated);
   font-size: 24px;
 }
 
