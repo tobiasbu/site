@@ -18,12 +18,14 @@ export default async function(eleventyConfig) {
 
   // add shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svg);
+  eleventyConfig.addShortcode('video', shortcodes.video);
 
   // add bundles
   eleventyConfig.addBundle("js");
 
-  // copy images
+  // copy assets
   eleventyConfig.addPassthroughCopy('src/assets/img')
+  eleventyConfig.addPassthroughCopy('src/assets/video')
 
   return {
     dir: {

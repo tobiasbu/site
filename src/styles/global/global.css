@@ -48,3 +48,9 @@ a, button {
   max-width: var(--tob-view-max);
   padding: 0 var(--tob-space-32);
 }
+
+/* VIDEO */
+
+video {
+  width: 100%;
+}
