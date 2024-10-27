@@ -4,24 +4,27 @@ const __tob_Theme = {
   value: getPreference(),
 }
 
-function applyTheme() {
-  document.firstElementChild.setAttribute('data-theme', __tob_Theme.value);
-}
-
 function getPreference() {
   const themePreference = localStorage.getItem('theme-preference');
-  if (themePreference) {
+  if (!!themePreference) {
     return themePreference;
   } else {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const matchLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+    if (matchLight) {
+      return 'light';
+    }
   }
+  return 'dark';
+}
+
+function applyTheme() {
+  document.firstElementChild.setAttribute('data-theme', __tob_Theme.value);
 }
 
 function setPreference() {
   localStorage.setItem('theme-preference', __tob_Theme.value);
   applyTheme();
 }
-
 
 function onClick() {
   const currentTheme = __tob_Theme.value;
@@ -35,6 +38,8 @@ window.onload = () => {
     return;
   }
   switcher.addEventListener('click', onClick);
+  __tob_Theme.value = getPreference();
+  applyTheme();
 };
 
 // sync with system changes
