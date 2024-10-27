@@ -1,3 +1,5 @@
+import yaml from 'js-yaml';
+
 import plugins from './src/config/plugins.js';
 import shortcodes from './src/config/shortcodes.js';
 
@@ -11,6 +13,9 @@ export default async function(eleventyConfig) {
   // watch folders
   eleventyConfig.addWatchTarget(`${INPUT_DIR}/styles/**/*.{css}`); 
   eleventyConfig.addWatchTarget(`${INPUT_DIR}/assets/**/*.{js,svg,png,jpeg}`);
+
+  // add yaml support
+  eleventyConfig.addDataExtension('yml,yaml', contents => yaml.load(contents));
 
   // add plugins
   eleventyConfig.addPlugin(plugins.cssConfig);
