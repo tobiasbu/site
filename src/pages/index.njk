@@ -1,0 +1,26 @@
+---
+layout: base.njk
+permalink: /index.html
+---
+<main>
+
+  <section class="tob-intro">
+    <div class="tob-wrapper">
+      <h1 class="tob-intro">
+        <span>Tobias Beise Ulrich</span> is an creative game developer based in Brazil.
+      </h1>
+    </div>
+  </section>
+
+  <section class="tob-work">
+    {% set gallery =  work.favorites %}
+    {% include "partials/portfolio-gallery.njk" %}
+
+    {% set gallery =  work.highlights %}
+    {% include "partials/portfolio-gallery.njk" %}
+
+    {% set gallery =  work.others %}
+    {% include "partials/portfolio-gallery.njk" %}
+  </section>
+
+</main>

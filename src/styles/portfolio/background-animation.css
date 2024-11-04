@@ -1,0 +1,107 @@
+
+@keyframes tob-anim-gallery-item-background-top-left {
+  0% {
+    clip-path: inset(0 0 90% 0);
+    transform: translateY(0%);
+  }
+  50% {
+    clip-path: inset(0 90% 0 0);
+    transform: translateY(0%);
+  }
+  100% {
+    clip-path: inset(0 90% 0 0);
+    transform: translateY(100%);
+  } 
+}
+
+
+@keyframes tob-anim-gallery-item-background-bottom-left {
+  0% {
+    clip-path: inset(0 90% 0 0);
+  }
+  50% {
+    clip-path: inset(90% 0 0 0);
+    transform: translateX(0%);
+  }
+	100% {
+    clip-path: inset(90% 0 0 0);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes tob-anim-gallery-item-background-bottom-right {
+  0% {
+    clip-path: inset(90% 0 0 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 90%);
+    transform: translateY(0%);
+  }
+	100% {
+    clip-path: inset(0 0 0 90%);
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes tob-anim-gallery-item-background-top-right {
+  0% {
+    clip-path: inset(0 0 0 90%);
+  }
+  50% {
+    clip-path: inset(0 0 90% 0);
+    transform: translateX(0%);
+  }
+	100% {
+    clip-path: inset(0 0 90% 0);
+    transform: translateX(-100%);
+  }
+}
+
+.tob-gallery-item-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+@define-mixin galleryBg $position {
+  .tob-gallery-item-background__$(position) {
+    @mixin-content;
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 50%;
+    background-color: var(--tob-color-primary);
+    animation-timing-function: linear;
+    animation-duration: 833ms;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-name: tob-anim-gallery-item-background-$position;
+  }
+
+  .tob-gallery-item:hover .tob-gallery-item-background__$(position) {
+    animation-play-state: running;
+  }
+}
+
+@mixin galleryBg top-left {
+  top: 0;
+  left: 0;
+}
+
+@mixin galleryBg bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+@mixin galleryBg bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+@mixin galleryBg top-right {
+  top: 0;
+  right: 0;
+}

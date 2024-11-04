@@ -1,0 +1,10 @@
+
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+
+@import 'global/variables.css';
+@import 'global/global.css';
+@import 'global/header.css';
+
+@import 'portfolio/intro.css';
+@import 'portfolio/gallery.css';
+@import 'portfolio/background-animation.css';

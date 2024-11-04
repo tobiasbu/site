@@ -1,0 +1,95 @@
+favorites:
+  grid: 3
+  items:
+  - name: Tennis Clash - Chinese Edition
+    img: tennis.png
+
+  - name: Laserball - Arcade game
+    img: laserball.png
+
+  - name: Koko-Kuba
+    img: koko.png
+    style:
+      position: 75% 0
+
+highlights:
+  grid: 4
+  items:
+  - name: Inside
+    img: inside.png
+    style: 
+      position: 0%
+      pixelated: true
+
+  - name: Cida & Adão
+    img: cida.png
+    style:
+      position: 0%
+
+  - name: Thyssenkrupp - Home Lift Builder
+    img: tk.png
+    video: tk-lift-builder
+    style:
+      transform: scale(1.05)
+
+
+  - name: Magnetis Mobile App
+    img: magnetis.jpg
+
+
+others:
+  grid: 5
+  items:
+
+  - name: Package Man
+    img: packageman.gif
+
+  - name: Neo-Bugreiro
+    img: neobug.png
+    style:
+      pixelated: true
+
+  - name: Planet of Clowns
+    img: clownsplanet.jpg
+    style:
+      position: 75% 0
+  
+  - name: Raytracer
+    img: raytracer.png
+
+  - name: Rhythmos Engine
+    img: rhythmos.png
+
+  - name: Microwave Survival
+    img: microwavesurvival.jpg
+
+  - name: VRSoccer
+    img: vrsoccer.jpg
+
+  - name: Sword & Shield
+    img: swordandshield.png
+
+  - name: Marduino
+    img: marduino.jpg
+
+  - name: Untitled Space
+    img: untitledspace.png
+
+  - name: Autorama AR
+    img: autoramaar.jpg
+
+  - name: OBJ Loader
+    img: objloader.jpg
+
+  - name: Robot Kombat
+    img: robotkombat.jpg
+
+  - name: Legend of Zilda
+    img: zilda.png
+    style:
+      pixelated: true
+
+  - name: Diablo RPG Maker
+    img: drmk.png
+    style:
+      pixelated: true
