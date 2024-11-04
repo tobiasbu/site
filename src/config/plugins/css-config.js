@@ -6,6 +6,7 @@ import cssnano from 'cssnano';
 import postcss from 'postcss';
 import postcssImport from 'postcss-import';
 import postcssCustomMedia from 'postcss-custom-media';
+import postcssMixins from 'postcss-mixins';
 
 const INPUT_STYLES_DIR = "src/styles"
 const OUTPUT_STYLES_DIR = "dist"
@@ -20,7 +21,7 @@ const cssConfig = eleventyConfig => {
     },
     compile: async (inputContent, inputPath) => {
       const distPaths = [];
-      if (inputPath.endsWith(`${INPUT_STYLES_DIR}/global/styles.css`)) {
+      if (inputPath.endsWith(`${INPUT_STYLES_DIR}/styles.css`)) {
         distPaths.push(`${OUTPUT_STYLES_DIR}/styles.css`);
       } else {
         return;
@@ -28,6 +29,7 @@ const cssConfig = eleventyConfig => {
 
       return async () => {
         let result = await postcss([
+          postcssMixins,
           postcssImport,
           postcssCustomMedia,
           autoprefixer,
