@@ -1,14 +1,10 @@
 {# Fonts #}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Jersey+10&family=Tiny5&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;1,300;1,600" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=instrument-sans:500,500i,600,600i,700,700i" rel="stylesheet" />
 
 {# Styles #}
 {%- if eleventy.env.runMode === "serve" %}
-		<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 {%- else  %}
-		<style>{% getBundle "css" %}</style>
+	<style>{% getBundle "css" %}</style>
 {%- endif %}

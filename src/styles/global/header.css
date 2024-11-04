@@ -2,7 +2,6 @@
 /* HEADER */
 
 header {
-  margin-bottom: var(--tob-space-64);
   padding: var(--tob-space-32) 0;
 }
 
@@ -16,7 +15,6 @@ header {
 /* LOGO */
 
 a.tob-logo {
-  display: flex;
   align-items: center;
   gap: var(--tob-space-16);
   cursor: pointer;
@@ -31,22 +29,16 @@ a.tob-logo {
   position: relative;
   width: var(--tob-space-64);
   height: var(--tob-space-64);
-  background-color: var(--tob-color-dark);
 }
 
 .tob-logo__tree {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   margin: auto;
   display: block;
 }
 
 /* TOP NAV  */
-
-nav {
-  font-family: var(--tob-font-family-pixelated);
-  font-size: 24px;
-}
 
 nav ul {
   display: flex;
@@ -61,14 +53,15 @@ nav ul {
 }
 
 nav a {
+  font-size: 22.5px;
   padding: 4px;
 }
 
 /* THEME SWITCHER */
 
 .tob-theme-switcher {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   line-height: 0;
   padding: 4px;
   background: transparent;

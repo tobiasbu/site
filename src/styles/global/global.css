@@ -29,18 +29,36 @@ body {
   background-color: var(--tob-color-bg);
   color: var(--tob-color-accent);
 }
+
+/* TEXT SELECTION */ 
+
+::selection {
+  color: var(--tob-color-light);
+  background: var(--tob-color-primary);
+  padding: 2px;
+  text-shadow: -2px -2px var(--tob-color-primary-variant);
+  box-shadow: 4px 4px var(--tob-color-primary-variant);
 }
 
 /* LINKS  */
 
 a, button {
-  color: var(--tob-color-accent);
+  color: var(--tob-color-secondary);
   text-decoration: none;
   font-weight: var(--tob-weight-medium);
+  text-shadow: 2px 2px var(--tob-color-primary-variant);
   &:hover {
-    background-color: var(--tob-color-accent);
-    color: var(--tob-color-light);
+    color: var(--tob-color-bg);
+    background-color: var(--tob-color-secondary);
+    text-shadow: -1px -1px var(--tob-color-secondary-slight);
+    box-shadow: 2px 2px var(--tob-color-primary-variant);
   }
+}
+
+/* SECTIONS */
+
+section {
+  margin: var(--tob-space-80) 0;
 }
 
 .tob-wrapper {
