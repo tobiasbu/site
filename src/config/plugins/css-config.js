@@ -6,6 +6,7 @@ import cssnano from 'cssnano';
 import postcss from 'postcss';
 import postcssImport from 'postcss-import';
 import postcssCustomMedia from 'postcss-custom-media';
+import postcssSimpleVars from 'postcss-simple-vars';
 import postcssMixins from 'postcss-mixins';
 
 const INPUT_STYLES_DIR = "src/styles"
@@ -29,9 +30,11 @@ const cssConfig = eleventyConfig => {
 
       return async () => {
         let result = await postcss([
-          postcssMixins,
           postcssImport,
+          postcssMixins,
+          postcssSimpleVars,
           postcssCustomMedia,
+          
           autoprefixer,
           cssnano
         ]).process(inputContent, {from: inputPath});

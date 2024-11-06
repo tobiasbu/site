@@ -1,15 +1,17 @@
 
+$insetPercent: 89.9%;
+
 @keyframes tob-anim-gallery-item-background-top-left {
   0% {
-    clip-path: inset(0 0 90% 0);
+    clip-path: inset(0 0 $insetPercent 0);
     transform: translateY(0%);
   }
   50% {
-    clip-path: inset(0 90% 0 0);
+    clip-path: inset(0 $insetPercent 0 0);
     transform: translateY(0%);
   }
   100% {
-    clip-path: inset(0 90% 0 0);
+    clip-path: inset(0 $insetPercent 0 0);
     transform: translateY(100%);
   } 
 }
@@ -17,42 +19,42 @@
 
 @keyframes tob-anim-gallery-item-background-bottom-left {
   0% {
-    clip-path: inset(0 90% 0 0);
+    clip-path: inset(0 $insetPercent 0 0);
   }
   50% {
-    clip-path: inset(90% 0 0 0);
+    clip-path: inset($insetPercent 0 0 0);
     transform: translateX(0%);
   }
 	100% {
-    clip-path: inset(90% 0 0 0);
+    clip-path: inset($insetPercent 0 0 0);
     transform: translateX(100%);
   }
 }
 
 @keyframes tob-anim-gallery-item-background-bottom-right {
   0% {
-    clip-path: inset(90% 0 0 0);
+    clip-path: inset($insetPercent 0 0 0);
   }
   50% {
-    clip-path: inset(0 0 0 90%);
+    clip-path: inset(0 0 0 $insetPercent);
     transform: translateY(0%);
   }
 	100% {
-    clip-path: inset(0 0 0 90%);
+    clip-path: inset(0 0 0 $insetPercent);
     transform: translateY(-100%);
   }
 }
 
 @keyframes tob-anim-gallery-item-background-top-right {
   0% {
-    clip-path: inset(0 0 0 90%);
+    clip-path: inset(0 0 0 $insetPercent);
   }
   50% {
-    clip-path: inset(0 0 90% 0);
+    clip-path: inset(0 0 $insetPercent 0);
     transform: translateX(0%);
   }
 	100% {
-    clip-path: inset(0 0 90% 0);
+    clip-path: inset(0 0 $insetPercent 0);
     transform: translateX(-100%);
   }
 }
