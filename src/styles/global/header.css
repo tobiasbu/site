@@ -25,6 +25,11 @@ a.tob-logo {
   }
 }
 
+.tob-logo h1 {
+  padding: 0;
+  margin: 0;
+}
+
 .tob-logo__container {
   position: relative;
   width: var(--tob-space-64);

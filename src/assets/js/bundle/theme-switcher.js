@@ -42,10 +42,10 @@ window.onload = () => {
   applyTheme();
 };
 
-// sync with system changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches: isDark}) => {
-  theme.value = isDark ? 'dark' : 'light';
-  setPreference();
-});
+// DISABLED - sync with system changes
+// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches: isDark}) => {
+//   theme.value = isDark ? 'dark' : 'light';
+//   setPreference();
+// });
 
 applyTheme();
