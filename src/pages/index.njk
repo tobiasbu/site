@@ -2,8 +2,7 @@
 layout: base.njk
 permalink: /index.html
 ---
-<main>
-
+<main class="tob-work">
   <section class="tob-intro">
     <div class="tob-wrapper">
       <h1 class="tob-intro">
@@ -12,15 +11,18 @@ permalink: /index.html
     </div>
   </section>
 
-  <section class="tob-work">
-    {% set gallery =  work.favorites %}
-    {% include "partials/portfolio-gallery.njk" %}
+  {% set gallery =  work.favorites %}
+  {% set gallery_desc = true %}
+  {% include "partials/portfolio-gallery.njk" %}
 
-    {% set gallery =  work.highlights %}
-    {% include "partials/portfolio-gallery.njk" %}
+  {% set gallery =  work.highlights %}
+  {% include "partials/portfolio-gallery.njk" %}
 
-    {% set gallery =  work.others %}
-    {% include "partials/portfolio-gallery.njk" %}
-  </section>
-
+  {% set gallery =  work.others %}
+  {% set gallery_desc = false %}
+  {% include "partials/portfolio-gallery.njk" %}
 </main>
+
+<footer>
+Copyright © Tobias Beise Ulrich 2024
+</footer>

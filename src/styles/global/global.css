@@ -72,3 +72,9 @@ section {
 video {
   width: 100%;
 }
+
+/* FOOTER */
+
+footer {
+  padding: var(--tob-space-24);
+}
