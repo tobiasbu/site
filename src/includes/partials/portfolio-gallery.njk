@@ -2,38 +2,50 @@
 <div class="tob-gallery tob-grid-{{ gallery.grid }}">
   {% for workItem in gallery.items %}
     <div class="tob-gallery-item">
-       <div class="tob-gallery-item-background">
-        <span class="tob-gallery-item-background__top-left"></span>
-        <span class="tob-gallery-item-background__bottom-left"></span>
-        <span class="tob-gallery-item-background__top-right"></span>
-        <span class="tob-gallery-item-background__bottom-right"></span>
-      </div>
+      <div class="tob-gallery-item-content">
+        <div class="tob-gallery-item-background">
+          <span class="tob-gallery-item-background__top-left"></span>
+          <span class="tob-gallery-item-background__bottom-left"></span>
+          <span class="tob-gallery-item-background__top-right"></span>
+          <span class="tob-gallery-item-background__bottom-right"></span>
+        </div>
 
-    {% set workImg = "assets/img/work/" + workItem.img %}
+      {% set workImg = "assets/img/work/" + workItem.img %}
 
-    {% if workItem.video %}
-      {% video workItem.video, workImg, workItem.style %}
+      {% if workItem.video %}
+        {% video workItem.video, workImg, workItem.style %}
 
-    {% else %}
+      {% else %}
 
-      {% set style = "" %}
-      {% if workItem.style.position %}
-        {% set style = style + "object-position: " + workItem.style.position + ";" %}
-      {% endif %}
+        {% set style = "" %}
+        {% if workItem.style.position %}
+          {% set style = style + "object-position: " + workItem.style.position + ";" %}
+        {% endif %}
 
-      {% if workItem.style.pixelated %}
-        {% set style = style + "image-rendering: pixelated;" %}
-      {% endif %} 
-
-      <img src="{{ workImg }}" 
-        aria-label="{{ workItem.name }}" 
-        alt="{{ workItem.name }}"
-        {% if style %}
-        style="{{ style }}"
+        {% if workItem.style.pixelated %}
+          {% set style = style + "image-rendering: pixelated;" %}
         {% endif %} 
-      />
 
-      <div class="tob-gallery-item-desc">
+        <img src="{{ workImg }}" 
+          aria-label="{{ workItem.name }}" 
+          alt="{{ workItem.name }}"
+          {% if style %}
+          style="{{ style }}"
+          {% endif %} 
+        />
+
+      {% endif %}
+    </div>
+
+    {% if gallery_desc == true %}
+      <div class="tob-gallery-item-description">
+        <span class="tob-gallery-item-description-tag tob-tag-type">{{ workItem.type }}</span>
+        <span class="tob-gallery-item-description-tag tob-tag-year">{{ workItem.year }}</span>
+        {% if workItem.awards %}
+          <span class="tob-gallery-item-description-tag tob-tag-award">
+            {% svg "trophy" %}
+          </span>
+        {% endif %}
       </div>
     {% endif %}
 

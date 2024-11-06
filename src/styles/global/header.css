@@ -21,7 +21,7 @@ a.tob-logo {
   color: var( --tob-color-text);
   &:hover {
     background-color: transparent;
-    color: var( --tob-color-text);
+    color: var(--tob-color-text);
   }
 }
 
