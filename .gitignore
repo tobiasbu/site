@@ -14,5 +14,6 @@ dist
 # secret data
 .env
 
-# compiled js code
+# bundled resources
 src/includes/js/*
+src/includes/css/*

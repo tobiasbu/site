@@ -9,7 +9,10 @@ import postcssCustomMedia from 'postcss-custom-media';
 import postcssSimpleVars from 'postcss-simple-vars';
 import postcssMixins from 'postcss-mixins';
 
+const isProduction = process.env.ELEVENTY_ENV === 'production';
+
 const INPUT_STYLES_DIR = "src/styles"
+const OUTPUT_BUNDLE_DIR = "src/includes/css"
 const OUTPUT_STYLES_DIR = "dist"
 
 const cssConfig = eleventyConfig => {
@@ -23,7 +26,7 @@ const cssConfig = eleventyConfig => {
     compile: async (inputContent, inputPath) => {
       const distPaths = [];
       if (inputPath.endsWith(`${INPUT_STYLES_DIR}/styles.css`)) {
-        distPaths.push(`${OUTPUT_STYLES_DIR}/styles.css`);
+        distPaths.push(`${isProduction ? OUTPUT_BUNDLE_DIR : OUTPUT_STYLES_DIR}/styles.css`);
       } else {
         return;
       }

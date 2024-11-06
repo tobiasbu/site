@@ -8,7 +8,8 @@
   },
   "scripts": {
     "clean": "rm -rf ./dist",
-    "start": "npm run clean && ELEVENTY_ENV=development eleventy --serve --watch"
+    "start": "npm run clean && ELEVENTY_ENV=development eleventy --serve --watch",
+    "build": "npm run clean && ELEVENTY_ENV=production eleventy"
   },
   "keywords": [
     "site",

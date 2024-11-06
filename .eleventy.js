@@ -27,6 +27,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addShortcode('video', shortcodes.video);
 
   // add bundles
+  eleventyConfig.addBundle("css", {hoist: true});
   eleventyConfig.addBundle("js");
 
   // copy assets
