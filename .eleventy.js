@@ -18,6 +18,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addDataExtension('yml,yaml', contents => yaml.load(contents));
 
   // add plugins
+  eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
   eleventyConfig.addPlugin(plugins.jsConfig);
 
