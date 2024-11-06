@@ -51,7 +51,7 @@ a, button {
     color: var(--tob-color-bg);
     background-color: var(--tob-color-secondary);
     text-shadow: -1px -1px var(--tob-color-secondary-slight);
-    box-shadow: 2px 2px var(--tob-color-primary-variant);
+    /* box-shadow: 2px 2px var(--tob-color-primary-variant); */
   }
 }
 
