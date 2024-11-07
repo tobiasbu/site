@@ -2,6 +2,7 @@ import esbuild from 'esbuild';
 import path from 'node:path';
 
 const INPUT_SCRIPTS_DIR = "./src/assets/js"
+const OUTPUT_BUNDLE_DIR = "./src/includes/_js"
 
 const jsConfig = eleventyConfig => {
   eleventyConfig.addTemplateFormats('js');
@@ -18,7 +19,7 @@ const jsConfig = eleventyConfig => {
       if (inputPath.startsWith(`${INPUT_SCRIPTS_DIR}/bundle/`)) {
         const filename = path.basename(inputPath);
         const outputFilename = filename;
-        const outputPath = `./src/includes/js/${outputFilename}`;
+        const outputPath = `${OUTPUT_BUNDLE_DIR}/${outputFilename}`;
 
         await esbuild.build({
           target: 'es2020',

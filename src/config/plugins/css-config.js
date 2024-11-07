@@ -12,7 +12,7 @@ import postcssMixins from 'postcss-mixins';
 const isProduction = process.env.ELEVENTY_ENV === 'production';
 
 const INPUT_STYLES_DIR = "src/styles"
-const OUTPUT_BUNDLE_DIR = "src/includes/css"
+const OUTPUT_BUNDLE_DIR = "src/includes/_css"
 const OUTPUT_STYLES_DIR = "dist"
 
 const cssConfig = eleventyConfig => {

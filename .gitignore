@@ -15,5 +15,5 @@ dist
 .env
 
 # bundled resources
-src/includes/js/*
-src/includes/css/*
+src/includes/_js/*
+src/includes/_css/*
