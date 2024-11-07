@@ -113,6 +113,12 @@
   left: 5%;
 }
 
+.tob-tag-tech {
+  transform: translateY(-10%) translateX(-150%);
+  top: 5%;
+  left: 5%;
+}
+
 .tob-tag-award {
   transform: translateY(-10%) translateX(200%);
   top: 5%;

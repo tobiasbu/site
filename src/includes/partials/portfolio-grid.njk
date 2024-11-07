@@ -41,6 +41,11 @@
       <div class="tob-gallery-item-description">
         <span class="tob-gallery-item-description-tag tob-tag-type">{{ workItem.type }}</span>
         <span class="tob-gallery-item-description-tag tob-tag-year">{{ workItem.year }}</span>
+        {% if workItem.tech %}
+          <span class="tob-gallery-item-description-tag tob-tag-tech">
+            {{ workItem.tech }}
+          </span>
+        {% endif %}
         {% if workItem.awards %}
           <span class="tob-gallery-item-description-tag tob-tag-award">
             {% svg "trophy" %}
