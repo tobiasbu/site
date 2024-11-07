@@ -33,6 +33,7 @@ export default async function(eleventyConfig) {
   // copy assets
   eleventyConfig.addPassthroughCopy('src/assets/img')
   eleventyConfig.addPassthroughCopy('src/assets/video')
+  eleventyConfig.addPassthroughCopy('src/docs')
 
   return {
     dir: {
