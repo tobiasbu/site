@@ -13,14 +13,13 @@ permalink: /index.html
 
   {% set gallery =  work.favorites %}
   {% set gallery_desc = true %}
-  {% include "partials/portfolio-gallery.njk" %}
+  {% include "partials/portfolio-grid.njk" %}
 
   {% set gallery =  work.highlights %}
-  {% include "partials/portfolio-gallery.njk" %}
+  {% include "partials/portfolio-grid.njk" %}
 
   {% set gallery =  work.others %}
-  {% set gallery_desc = false %}
-  {% include "partials/portfolio-gallery.njk" %}
+  {% include "partials/portfolio-grid.njk" %}
 </main>
 
 <footer>
