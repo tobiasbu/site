@@ -14,15 +14,12 @@ header {
 
 /* LOGO */
 
-a.tob-logo {
+.tob-logo {
   align-items: center;
-  gap: var(--tob-space-16);
+  padding: 2px;
+  font-size: 26px;
+  font-weight: var(--tob-weight-bold);
   cursor: pointer;
-  color: var( --tob-color-text);
-  &:hover {
-    background-color: transparent;
-    color: var(--tob-color-text);
-  }
 }
 
 .tob-logo h1 {

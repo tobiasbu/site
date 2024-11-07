@@ -1,32 +1,4 @@
 
-/* PORTFOLIO - GRID */
-
-.tob-gallery {
-  display: grid;
-  padding: 0 var(--tob-space-32);
-  gap: var(--tob-space-32);
-  margin-bottom: var(--tob-space-32);
-}
-
-.tob-grid-2 {
-  grid-template-columns: repeat(2,minmax(0,1fr));
-}
-
-.tob-grid-3 {
-  grid-template-columns: repeat(3,minmax(0,1fr));
-}
-
-.tob-grid-4 {
-  grid-template-columns: repeat(4,minmax(0,1fr));
-}
-
-.tob-grid-5 {
-  grid-template-columns: repeat(5,minmax(0,1fr));
-}
-
-.tob-grid-6 {
-  grid-template-columns: repeat(6,minmax(0,1fr));
-}
 
 /* PORTFOLIO - ITEM */
 
@@ -87,8 +59,8 @@
   position: absolute;
   padding: 8px;
   line-height: 1;
-  background-color: var(--tob-color-secondary);
-  color: var(--tob-color-primary-variant);
+  background-color: var(--tob-theme-portfolio-tag);
+  color: var(--tob-theme-portfolio-tag-text);
   width: auto;
   box-shadow: 2px 2px var(--tob-color-primary-variant);
   transition-property: transform;

@@ -6,20 +6,23 @@ permalink: /index.html
   <section class="tob-intro">
     <div class="tob-wrapper">
       <h1 class="tob-intro">
-        <span>Tobias Beise Ulrich</span> is an creative game developer based in Brazil.
+        Tobias Beise Ulrich is an creative game developer based in Brazil.
       </h1>
     </div>
   </section>
+  
+  <section class="tob-portfolio">
+    {% set gallery =  work.favorites %}
+    {% set gallery_desc = true %}
+    {% include "partials/portfolio-grid.njk" %}
 
-  {% set gallery =  work.favorites %}
-  {% set gallery_desc = true %}
-  {% include "partials/portfolio-grid.njk" %}
+    {% set gallery =  work.highlights %}
+    {% include "partials/portfolio-grid.njk" %}
 
-  {% set gallery =  work.highlights %}
-  {% include "partials/portfolio-grid.njk" %}
+    {% set gallery =  work.others %}
+    {% include "partials/portfolio-grid.njk" %}
+  </section>
 
-  {% set gallery =  work.others %}
-  {% include "partials/portfolio-grid.njk" %}
 </main>
 
 <footer>

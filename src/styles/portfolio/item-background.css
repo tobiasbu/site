@@ -75,7 +75,7 @@ $insetPercent: 89.9%;
     content: "";
     width: 50%;
     height: 50%;
-    background-color: var(--tob-color-primary);
+    background-color: var(--tob-theme-portfolio-bg);
     animation-timing-function: linear;
     animation-duration: 833ms;
     animation-iteration-count: infinite;
