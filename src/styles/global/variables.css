@@ -6,9 +6,9 @@
 
   /* FONT SIZE */
   --tob-font-size: 20px;
-  --tob-font-size-logo: 26px;
-  --tob-font-size-large: 28px;
-  --tob-font-size-title: 54px;
+  --tob-font-size-medium: 26px;
+  --tob-font-size-large: 30px;
+  --tob-font-size-huge: 54px;
 
   /* FONT WEIGHTS */
   --tob-weight-regular: 500;
@@ -84,4 +84,5 @@
 @custom-media --tob-media-grid-break-1560 (max-width: 1560px);
 @custom-media --tob-media-grid-break-1352 (max-width: 1352px);
 @custom-media --tob-media-mobile (max-width: 1040px);
-@custom-media --tob-media-small (max-width: 890px);
+@custom-media --tob-media-small (max-width: 902px);
+@custom-media --tob-media-phone (max-width: 640px);

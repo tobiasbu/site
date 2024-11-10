@@ -1,0 +1,20 @@
+
+/* ABOUT */
+
+.tob-about {
+  display: grid;
+  grid-template-columns: fit-content(60%) auto;
+  grid-gap: var(--tob-space-48);
+}
+
+.tob-about-portrait {
+  position: sticky;
+  margin-top: var(--tob-space-24);
+  top: 80px;
+}
+
+@media (--tob-media-phone) {
+  .tob-about {
+    display: block;
+  }
+}

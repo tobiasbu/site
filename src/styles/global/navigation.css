@@ -54,7 +54,7 @@ nav > ul a {
     height: 100vh;
     inset: 0;
     background-color: var(--tob-theme-bg);
-    padding: 108px 24px 24px;
+    padding: 108px var(--tob-space-32) var(--tob-space-32);
   }
 
   nav ul {
@@ -65,6 +65,12 @@ nav > ul a {
   .tob-menu-active nav {
     visibility: visible;
     z-index: 1;
+  }
+}
+
+@media (--tob-media-small) {
+  nav {
+    padding: 108px var(--tob-space-24) var(--tob-space-24);
   }
 }
 
