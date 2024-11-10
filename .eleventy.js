@@ -2,6 +2,7 @@ import yaml from 'js-yaml';
 
 import plugins from './src/config/plugins.js';
 import shortcodes from './src/config/shortcodes.js';
+import tags from './src/config/tags.js';
 
 const INPUT_DIR = "src";
 
@@ -25,6 +26,9 @@ export default async function(eleventyConfig) {
   // add shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('video', shortcodes.video);
+
+  // add tags
+  tags.addMarkdownTag(eleventyConfig);
 
   // add bundles
   eleventyConfig.addBundle("css", {hoist: true});
