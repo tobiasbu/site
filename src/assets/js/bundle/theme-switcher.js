@@ -32,7 +32,7 @@ function onClick() {
   setPreference();
 }
 
-window.onload = () => {
+window.addEventListener("load", () => {
   const switcher = document.querySelector('[data-theme-switcher]');
   if (!switcher) {
     return;
@@ -40,7 +40,7 @@ window.onload = () => {
   switcher.addEventListener('click', onClick);
   __tob_Theme.value = getPreference();
   applyTheme();
-};
+}, false);
 
 // DISABLED - sync with system changes
 // window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches: isDark}) => {

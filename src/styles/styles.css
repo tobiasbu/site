@@ -4,5 +4,6 @@
 @import 'global/variables.css';
 @import 'global/global.css';
 @import 'global/header.css';
+@import 'global/navigation.css';
 
 @import 'portfolio/portfolio.css';

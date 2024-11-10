@@ -30,6 +30,10 @@ body {
   color: var(--tob-color-accent);
 }
 
+body.tob-menu-active {
+  position: fixed;
+}
+
 :root[data-theme='dark'] body {
   background-image: url('assets/img/bg.png'); 
 }

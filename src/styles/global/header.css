@@ -5,6 +5,12 @@ header {
   padding: var(--tob-space-32) 0;
 }
 
+body.tob-menu-active header > .tob-wrapper {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
 .tob-header-inner {
   display: flex;
   align-items: center;
@@ -20,6 +26,7 @@ header {
   font-size: var(--tob-font-size-logo);
   font-weight: var(--tob-weight-bold);
   cursor: pointer;
+  z-index: 10;
 }
 
 .tob-logo__container {
@@ -35,42 +42,3 @@ header {
   display: block;
 }
 
-/* TOP NAV  */
-
-nav ul {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: var(--tob-space-48);
-  line-height: 0;
-}
-
-nav a {
-  font-size: 22.5px;
-  padding: 4px;
-}
-
-/* THEME SWITCHER */
-
-.tob-theme-switcher {
-  width: 36px;
-  height: 36px;
-  line-height: 0;
-  padding: 4px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-
-[data-theme="dark"] .tob-theme-switcher .tob-theme-dark-icon {
-  display: none;
-}
-
-[data-theme="light"] .tob-theme-switcher .tob-theme-light-icon {
-  display: none;
-}

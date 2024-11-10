@@ -1,23 +1,13 @@
-<header>
+<header class="tob-header">
   <div class="tob-wrapper">
     <div class="tob-header-inner">
 
-      <a class="tob-logo">
+      <a class="tob-logo" href="/">
         tobiasbu
       </a> 
 
-      <nav>
-        <ul>
-      {% for page in navigation.top %}
-        <li>
-          <a href="{{page.url}}">{{page.text}}</a>
-        </li>
-      {% endfor %}
-        <li>
-          {% include './theme-switcher.njk' %}
-        </li>
-        </ul>
-      </nav>
+      {% include './navigation.njk' %}
+     
     </div>
   </div>
 </header>
