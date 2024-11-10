@@ -17,14 +17,9 @@ header {
 .tob-logo {
   align-items: center;
   padding: 2px;
-  font-size: 26px;
+  font-size: var(--tob-font-size-logo);
   font-weight: var(--tob-weight-bold);
   cursor: pointer;
-}
-
-.tob-logo h1 {
-  padding: 0;
-  margin: 0;
 }
 
 .tob-logo__container {

@@ -5,15 +5,16 @@ permalink: /index.html
 <main class="tob-work">
   <section class="tob-intro">
     <div class="tob-wrapper">
-      <h1 class="tob-intro">
+      <h1>
         Tobias Beise Ulrich is an creative game developer based in Brazil.
       </h1>
     </div>
   </section>
   
   <section class="tob-portfolio">
+    {% set gallery_info = true %}
+    
     {% set gallery =  work.favorites %}
-    {% set gallery_desc = true %}
     {% include "partials/portfolio-grid.njk" %}
 
     {% set gallery =  work.highlights %}

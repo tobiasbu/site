@@ -1,7 +1,13 @@
 
 <div class="tob-gallery tob-grid-{{ gallery.grid }}">
   {% for workItem in gallery.items %}
-    <div class="tob-gallery-item">
+
+    {% set className = "tob-gallery-item" %}
+    {% if gallery.grid == 3 and loop.last %}
+       {% set className = className + " tob-gallery-item-wide-small" %}
+    {% endif %}
+
+    <a class="{{ className }}">
       <div class="tob-gallery-item-content">
         <div class="tob-gallery-item-background">
           <span class="tob-gallery-item-background__top-left"></span>
@@ -37,23 +43,23 @@
       {% endif %}
     </div>
 
-    {% if gallery_desc == true %}
-      <div class="tob-gallery-item-description">
-        <span class="tob-gallery-item-description-tag tob-tag-type">{{ workItem.type }}</span>
-        <span class="tob-gallery-item-description-tag tob-tag-year">{{ workItem.year }}</span>
+    {% if gallery_info == true %}
+      <div class="tob-gallery-item-info">
+        <span class="tob-gallery-item-info-tag tob-tag-type">{{ workItem.type }}</span>
+        <span class="tob-gallery-item-info-tag tob-tag-year">{{ workItem.year }}</span>
         {% if workItem.tech %}
-          <span class="tob-gallery-item-description-tag tob-tag-tech">
+          <span class="tob-gallery-item-info-tag tob-tag-tech">
             {{ workItem.tech }}
           </span>
         {% endif %}
         {% if workItem.awards %}
-          <span class="tob-gallery-item-description-tag tob-tag-award">
+          <span class="tob-gallery-item-info-tag tob-tag-award">
             {% svg "trophy" %}
           </span>
         {% endif %}
       </div>
     {% endif %}
 
-    </div>
+    </a>
   {% endfor %}
 </div>

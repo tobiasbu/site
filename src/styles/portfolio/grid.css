@@ -3,27 +3,36 @@
 
 .tob-gallery {
   display: grid;
-  padding: 0 var(--tob-space-32);
   gap: var(--tob-space-32);
-  margin-bottom: var(--tob-space-32);
+  padding: 0 var(--tob-space-32);
+  margin: 0 auto var(--tob-space-32) auto;
+  max-width: var(--tob-view-width-max-grid);
 }
 
-.tob-grid-2 {
-  grid-template-columns: repeat(2,minmax(0,1fr));
+@media (--tob-media-small) {
+  .tob-gallery {
+    gap: var(--tob-space-24);
+    padding: 0 var(--tob-space-24);
+    margin: 0 auto var(--tob-space-24) auto;
+  }
 }
 
-.tob-grid-3 {
-  grid-template-columns: repeat(3,minmax(0,1fr));
+
+@define-mixin grid $sizeName, $columnSize {
+  .tob-grid-$(sizeName) {
+    grid-template-columns: repeat($columnSize, minmax(0,1fr));
+  }
 }
 
-.tob-grid-4 {
-  grid-template-columns: repeat(4,minmax(0,1fr));
-}
 
-.tob-grid-5 {
-  grid-template-columns: repeat(5,minmax(0,1fr));
-}
+@mixin grid 1, 1;
+@mixin grid 2, 2;
+@mixin grid 3, 3;
+@mixin grid 4, 4;
+@mixin grid 5, 5;
 
-.tob-grid-6 {
-  grid-template-columns: repeat(6,minmax(0,1fr));
+@media (--tob-media-mobile) {
+  @mixin grid 3, 2;
+  @mixin grid 4, 2;
+  @mixin grid 5, 2;
 }

@@ -5,6 +5,12 @@
 .tob-gallery-item {
   position: relative;
   aspect-ratio: 1;
+  /* overflow: hidden; */
+  &:hover {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
 }
 
 .tob-gallery-item-content {
@@ -30,89 +36,14 @@
   object-fit: cover;
 }
 
-/* GALLERY DESCRIPTION */
-
-.tob-gallery-item-description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 0%;
-  transform: scale(1);
-  overflow: hidden;
-  padding: 0%;
-  transform: scale(1);
-  transition-property: transform padding;
-  transition-duration: 233ms;
-}
-
-.tob-gallery-item:hover .tob-gallery-item-description {
-  top: 5%;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
-  transform: scale(1.05);
-}
-
-.tob-gallery-item-description-tag {
-  position: absolute;
-  padding: 8px;
-  line-height: 1;
-  background-color: var(--tob-theme-portfolio-tag);
-  color: var(--tob-theme-portfolio-tag-text);
-  width: auto;
-  box-shadow: 2px 2px var(--tob-color-primary-variant);
-  transition-property: transform;
-  transition-delay: 60ms;
-  transition-duration: 233ms;
-  user-select: none;
-}
-
-.tob-gallery-item:hover .tob-gallery-item-description-tag {
-  transform: translateY(0%) translateX(-5%);
-}
-
-.tob-tag-type {
-  transform: translateY(-10%) translateX(150%);
-  bottom: 5%;
-  right: 5%;
-}
-
-.tob-tag-year {
-  transform: translateY(-10%) translateX(-150%);
-  bottom: 5%;
-  left: 5%;
-}
-
-.tob-tag-tech {
-  transform: translateY(-10%) translateX(-150%);
-  top: 5%;
-  left: 5%;
-}
-
-.tob-tag-award {
-  transform: translateY(-10%) translateX(200%);
-  top: 5%;
-  right: 5%;
-  width: 36px;
-  height: 36px;
-  padding: 4px;
-  stroke-width: 20px;
-  animation: tob-anim-award 1s linear infinite;
-}
-
-@keyframes tob-anim-award {
-  0% {
-    background-color: #edd796;
+@media (--tob-media-mobile) {
+  .tob-gallery-item.tob-gallery-item-wide-small {
+    grid-column: 1 / 2 span;
+    aspect-ratio: 16 / 8;
   }
-  50% {
-    background-color: var(--tob-color-secondary);
-  }
-  100% {
-    background-color: #edd796;
+
+  .tob-gallery-item.tob-gallery-item-wide-small:hover > .tob-gallery-item-content {
+    padding: 2.5%;
+    transform: scale(1.025);
   }
 }
-
-
-

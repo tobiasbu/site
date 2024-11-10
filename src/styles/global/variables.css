@@ -5,10 +5,10 @@
   --tob-base-font-size: 20px;
 
   /* FONT SIZE */
-  --tob-font-size-xs: 0.6rem;
-  --tob-font-size-s: 0.762rem;
-  --tob-font-size: 1rem;
-  --tob-font-size-large: 1.75rem;
+  --tob-font-size: 20px;
+  --tob-font-size-logo: 26px;
+  --tob-font-size-large: 28px;
+  --tob-font-size-title: 54px;
 
   /* FONT WEIGHTS */
   --tob-weight-regular: 500;
@@ -28,7 +28,8 @@
   --tob-space-80: 80px;
 
   /* VIEWS */
-  --tob-view-max: 1024px; /* 1024px */
+  --tob-view-width-content: 1024px; /* 1024px */
+  --tob-view-width-max-grid: 2040px;
 
   /* GREEN THEME - COLORS */ 
   /* 
@@ -38,24 +39,16 @@
   --tob-color-accent: #68874e;
   */
   
-
   /* RED THEME - COLORS */ 
   --tob-color-dark: #290006;
   --tob-color-light: #fffef7;
-  --tob-color-light-0: #d6d1b1;
-  /* #ebe8d2; */
-
+  --tob-color-light-0: #d6d1b1; /* #ebe8d2; */
   --tob-color-primary: #eb0032;
   --tob-color-primary-variant: #75001e;
-
   --tob-color-secondary: #2fffdc; /* #14ffcd*/
-  --tob-color-secondary-dark: #1fcfb2;
-  /* #0e9270; */
+  --tob-color-secondary-dark: #1fcfb2;/* #0e9270; */
   --tob-color-secondary-slight: #31ffdc;
 }
-
-/* MEDIA QUERIES */
-@custom-media --tob-media-view-max (max-width: var(--tob-view-max));
 
 /* THEMES */
 :root,
@@ -86,3 +79,9 @@
   --tob-theme-bg: var(--tob-color-dark);
   --tob-theme-text: var(--tob-color-light);
 }
+
+/* MEDIA QUERIES */
+@custom-media --tob-media-grid-break-1560 (max-width: 1560px);
+@custom-media --tob-media-grid-break-1352 (max-width: 1352px);
+@custom-media --tob-media-mobile (max-width: 1040px);
+@custom-media --tob-media-small (max-width: 890px);

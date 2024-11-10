@@ -1,0 +1,133 @@
+
+/* GALLERY INFO */
+
+$tagMargin: 16px;
+$tagSmallMargin: 8px;
+
+.tob-gallery-item-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0%;
+  transform: scale(1);
+  overflow: hidden;
+  padding: 0%;
+  transform: scale(1);
+  transition-property: transform padding;
+  transition-duration: 233ms;
+}
+
+.tob-gallery-item:hover .tob-gallery-item-info {
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  transform: scale(1.05);
+}
+
+.tob-gallery-item.tob-gallery-item-wide-small:hover .tob-gallery-item-info {
+  bottom: 5.1%;
+  left: 2.5%;
+  right: 2.5%;
+  top: 5.1%;
+  transform: scale(1.025);
+}
+
+.tob-gallery-item-info-tag {
+  font-size: 16px;
+  position: absolute;
+  padding: 8px;
+  width: auto;
+  line-height: 1;
+  background-color: var(--tob-theme-portfolio-tag);
+  color: var(--tob-theme-portfolio-tag-text);
+  box-shadow: 2px 2px var(--tob-color-primary-variant);
+  transition-property: transform;
+  transition-delay: 60ms;
+  transition-duration: 233ms;
+  user-select: none;
+}
+
+.tob-gallery-item:hover .tob-gallery-item-info-tag {
+  transform: translateY(0%) translateX(0%);
+}
+
+.tob-tag-type {
+  transform: translateY(-10%) translateX(200%);
+  bottom: $tagMargin;
+  right: $tagMargin;
+}
+
+.tob-tag-year {
+  transform: translateY(-10%) translateX(-200%);
+  bottom: $tagMargin;
+  left: $tagMargin;
+}
+
+.tob-tag-tech {
+  transform: translateY(-10%) translateX(-200%);
+  top: $tagMargin;
+  left: $tagMargin;
+}
+
+.tob-tag-award {
+  transform: translateY(-10%) translateX(200%);
+  top: $tagMargin;
+  right: $tagMargin;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  stroke-width: 20px;
+  animation: tob-anim-award 1s linear infinite;
+}
+
+@keyframes tob-anim-award {
+  0% {
+    background-color: #edd796;
+  }
+  50% {
+    background-color: var(--tob-color-secondary);
+  }
+  100% {
+    background-color: #edd796;
+  }
+}
+
+@media (--tob-media-grid-break-1352) {
+  .tob-grid-4 .tob-gallery-item-info-tag,
+  .tob-grid-5 .tob-gallery-item-info-tag {
+    font-size: 16px;
+  }
+
+  .tob-grid-4 .tob-tag-award,
+  .tob-grid-5 .tob-tag-award {
+    width: 32px;
+    height: 32px;
+  }
+
+  .tob-grid-4 .tob-tag-award,
+  .tob-grid-5 .tob-tag-award {
+    top: $tagSmallMargin;
+    right: $tagSmallMargin;
+  }
+
+  .tob-grid-4 .tob-tag-type,
+  .tob-grid-5 .tob-tag-type {
+    bottom: $tagSmallMargin;
+    right: $tagSmallMargin;
+  }
+  
+  .tob-grid-4 .tob-tag-year,
+  .tob-grid-5 .tob-tag-year {
+    bottom: $tagSmallMargin;
+    left: $tagSmallMargin;
+  }
+  
+  .tob-grid-4 .tob-tag-tech,
+  .tob-grid-5 .tob-tag-tech {
+    top: $tagSmallMargin;
+    left: $tagSmallMargin;
+  }
+}

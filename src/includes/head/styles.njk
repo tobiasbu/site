@@ -4,7 +4,7 @@
 
 {# Styles #}
 {%- if eleventy.env.runMode === "serve" %}
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="/styles.css">
 {%- else  %}
 	<style>{% getBundle "css", "bundled" %}</style>
 
