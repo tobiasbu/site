@@ -2,30 +2,23 @@
 layout: base.njk
 permalink: /index.html
 ---
-<main class="tob-work">
-  <section class="tob-intro">
-    <div class="tob-wrapper">
-      <h1>
-        Tobias Beise Ulrich is an creative game developer based in Brazil.
-      </h1>
-    </div>
-  </section>
+<section class="tob-intro">
+  <div class="tob-wrapper">
+    <h1>
+      Tobias Beise Ulrich is a creative game developer based in Brazil.
+    </h1>
+  </div>
+</section>
+
+<section class="tob-portfolio">
+  {% set gallery_info = true %}
   
-  <section class="tob-portfolio">
-    {% set gallery_info = true %}
-    
-    {% set gallery =  work.favorites %}
-    {% include "partials/portfolio-grid.njk" %}
+  {% set gallery =  work.favorites %}
+  {% include "partials/portfolio-grid.njk" %}
 
-    {% set gallery =  work.highlights %}
-    {% include "partials/portfolio-grid.njk" %}
+  {% set gallery =  work.highlights %}
+  {% include "partials/portfolio-grid.njk" %}
 
-    {% set gallery =  work.others %}
-    {% include "partials/portfolio-grid.njk" %}
-  </section>
-
-</main>
-
-<footer>
-Copyright © Tobias Beise Ulrich 2024
-</footer>
+  {% set gallery =  work.others %}
+  {% include "partials/portfolio-grid.njk" %}
+</section>
