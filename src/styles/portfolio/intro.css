@@ -2,18 +2,10 @@
 /* INTRO */
 
 .tob-intro {
-  margin: var(--tob-space-48) 0;
+  margin: var(--tob-space-32) 0 var(--tob-space-64);
 }
 
 .tob-intro h1 {
   text-align: center;
   margin: 0;
 }
-
-/* .tob-intro span {
-  color: var(--tob-color-light);
-  background-color: var(--tob-color-primary);
-  padding: 2px;
-  text-shadow: -2px -2px var(--tob-color-primary-variant);
-  box-shadow: 4px 4px var(--tob-color-primary-variant);
-} */

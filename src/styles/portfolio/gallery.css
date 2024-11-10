@@ -1,7 +1,7 @@
 
 /* PORTFOLIO - GRID */
 
-.tob-gallery {
+.tob-portfolio-gallery {
   display: grid;
   gap: var(--tob-space-32);
   padding: 0 var(--tob-space-32);
@@ -10,7 +10,7 @@
 }
 
 @media (--tob-media-small) {
-  .tob-gallery {
+  .tob-portfolio-gallery {
     gap: var(--tob-space-24);
     padding: 0 var(--tob-space-24);
     margin: 0 auto var(--tob-space-24) auto;
@@ -19,7 +19,7 @@
 
 
 @define-mixin grid $sizeName, $columnSize {
-  .tob-grid-$(sizeName) {
+  .tob-portfolio-grid-$(sizeName) {
     grid-template-columns: repeat($columnSize, minmax(0,1fr));
   }
 }

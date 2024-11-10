@@ -1,19 +1,20 @@
 
-<div class="tob-gallery tob-grid-{{ gallery.grid }}">
+<div class="tob-portfolio-gallery tob-portfolio-grid-{{ gallery.grid }}">
   {% for workItem in gallery.items %}
 
     {% set className = "tob-gallery-item" %}
+    {% set className = "tob-portfolio-item" %}
     {% if gallery.grid == 3 and loop.last %}
-       {% set className = className + " tob-gallery-item-wide-small" %}
+       {% set className = className + " tob-portfolio-item-wide-small" %}
     {% endif %}
 
     <a class="{{ className }}">
-      <div class="tob-gallery-item-content">
-        <div class="tob-gallery-item-background">
-          <span class="tob-gallery-item-background__top-left"></span>
-          <span class="tob-gallery-item-background__bottom-left"></span>
-          <span class="tob-gallery-item-background__top-right"></span>
-          <span class="tob-gallery-item-background__bottom-right"></span>
+      <div class="tob-portfolio-item-content">
+        <div class="tob-portfolio-item-background">
+          <span class="tob-portfolio-item-background__top-left"></span>
+          <span class="tob-portfolio-item-background__bottom-left"></span>
+          <span class="tob-portfolio-item-background__top-right"></span>
+          <span class="tob-portfolio-item-background__bottom-right"></span>
         </div>
 
       {% set workImg = "assets/img/work/" + workItem.img %}
@@ -44,16 +45,16 @@
     </div>
 
     {% if gallery_info == true %}
-      <div class="tob-gallery-item-info">
-        <span class="tob-gallery-item-info-tag tob-tag-type">{{ workItem.type }}</span>
-        <span class="tob-gallery-item-info-tag tob-tag-year">{{ workItem.year }}</span>
+      <div class="tob-portfolio-item-info">
+        <span class="tob-portfolio-item-info-tag tob-tag-type">{{ workItem.type }}</span>
+        <span class="tob-portfolio-item-info-tag tob-tag-year">{{ workItem.year }}</span>
         {% if workItem.tech %}
-          <span class="tob-gallery-item-info-tag tob-tag-tech">
+          <span class="tob-portfolio-item-info-tag tob-tag-tech">
             {{ workItem.tech }}
           </span>
         {% endif %}
         {% if workItem.awards %}
-          <span class="tob-gallery-item-info-tag tob-tag-award">
+          <span class="tob-portfolio-item-info-tag tob-tag-award">
             {% svg "trophy" %}
           </span>
         {% endif %}

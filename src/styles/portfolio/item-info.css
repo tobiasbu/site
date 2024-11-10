@@ -4,7 +4,7 @@
 $tagMargin: 16px;
 $tagSmallMargin: 8px;
 
-.tob-gallery-item-info {
+.tob-portfolio-item-info {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -19,7 +19,7 @@ $tagSmallMargin: 8px;
   transition-duration: 233ms;
 }
 
-.tob-gallery-item:hover .tob-gallery-item-info {
+.tob-portfolio-item:hover .tob-portfolio-item-info {
   top: 5%;
   bottom: 5%;
   left: 5%;
@@ -27,7 +27,7 @@ $tagSmallMargin: 8px;
   transform: scale(1.05);
 }
 
-.tob-gallery-item.tob-gallery-item-wide-small:hover .tob-gallery-item-info {
+.tob-portfolio-item.tob-portfolio-item-wide-small:hover .tob-portfolio-item-info {
   bottom: 5.1%;
   left: 2.5%;
   right: 2.5%;
@@ -35,7 +35,7 @@ $tagSmallMargin: 8px;
   transform: scale(1.025);
 }
 
-.tob-gallery-item-info-tag {
+.tob-portfolio-item-info-tag {
   font-size: 16px;
   position: absolute;
   padding: 8px;
@@ -50,7 +50,7 @@ $tagSmallMargin: 8px;
   user-select: none;
 }
 
-.tob-gallery-item:hover .tob-gallery-item-info-tag {
+.tob-portfolio-item:hover .tob-portfolio-item-info-tag {
   transform: translateY(0%) translateX(0%);
 }
 
@@ -96,37 +96,37 @@ $tagSmallMargin: 8px;
 }
 
 @media (--tob-media-grid-break-1352) {
-  .tob-grid-4 .tob-gallery-item-info-tag,
-  .tob-grid-5 .tob-gallery-item-info-tag {
+  .tob-portfolio-grid-4 .tob-portfolio-item-info-tag,
+  .tob-portfolio-grid-5 .tob-portfolio-item-info-tag {
     font-size: 16px;
   }
 
-  .tob-grid-4 .tob-tag-award,
-  .tob-grid-5 .tob-tag-award {
+  .tob-portfolio-grid-4 .tob-tag-award,
+  .tob-portfolio-grid-5 .tob-tag-award {
     width: 32px;
     height: 32px;
   }
 
-  .tob-grid-4 .tob-tag-award,
-  .tob-grid-5 .tob-tag-award {
+  .tob-portfolio-grid-4 .tob-tag-award,
+  .tob-portfolio-grid-5 .tob-tag-award {
     top: $tagSmallMargin;
     right: $tagSmallMargin;
   }
 
-  .tob-grid-4 .tob-tag-type,
-  .tob-grid-5 .tob-tag-type {
+  .tob-portfolio-grid-4 .tob-tag-type,
+  .tob-portfolio-grid-5 .tob-tag-type {
     bottom: $tagSmallMargin;
     right: $tagSmallMargin;
   }
   
-  .tob-grid-4 .tob-tag-year,
-  .tob-grid-5 .tob-tag-year {
+  .tob-portfolio-grid-4 .tob-tag-year,
+  .tob-portfolio-grid-5 .tob-tag-year {
     bottom: $tagSmallMargin;
     left: $tagSmallMargin;
   }
   
-  .tob-grid-4 .tob-tag-tech,
-  .tob-grid-5 .tob-tag-tech {
+  .tob-portfolio-grid-4 .tob-tag-tech,
+  .tob-portfolio-grid-5 .tob-tag-tech {
     top: $tagSmallMargin;
     left: $tagSmallMargin;
   }
