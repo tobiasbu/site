@@ -1,17 +1,20 @@
 favorites:
   grid: 3
   items:
-  - name: Tennis Clash - Chinese Edition
+  - name: Tennis Clash
+    subtitle: Chinese Edition
     img: tennis.png
     type: Professional
-    year: 2021 - 2022
+    year: 2021-2022
     company: Wildlife Studios
     tech: Unity
+    slug: tennis-clash
 
-  - name: Laserball - Arcade game
+  - name: Laserball
+    subtitle: Arcade Game
     img: laserball.png
     type: Professional
-    year: 2014 - 2016
+    year: 2014-2016
     company: Ideia à Vista
     tech: Game Maker
 
@@ -20,7 +23,7 @@ favorites:
     style:
       position: 75% 0
     type: Indie
-    year: 2015 - ?
+    year: 2015-?
     tech: Unity
     awards:
       title: “Best Game in all categories”
@@ -41,6 +44,7 @@ highlights:
     year: 2019
     tech: ThreeJS
     company: blank studio
+    slug: lift-builder
 
   - name: Inside
     img: inside.png
@@ -49,19 +53,20 @@ highlights:
       pixelated: true
     type: Competition
     year: 2012
-    tech: RPG Maker 2000
+    tech: RM2k
     awards:
       - title: Winner of the contest "O Demônio dentro de nós" - 2012
         reviewer: "Mundo RPG Maker (extinct brazilian forum)"
       - title: Golden Game - November / 2013
         reviewer: "Mundo RPG Maker"
 
-  - name: Magnetis Mobile App
+  - name: magnetis - Mobile app
     img: magnetis.jpg
     type: Professional
-    year: 2019 - 2021
+    year: 2019-2021
     tech: React Native
     company: magnetis
+    slug: magnetis
 
   - name: Cida & Adão
     img: cida.png
@@ -93,7 +98,7 @@ others:
 
   - name: Sword & Shield
     img: swordandshield.png
-    type: GGJ
+    type: Jam
     year: 2018
     tech: Unity
 
@@ -101,13 +106,13 @@ others:
     img: clownsplanet.jpg
     style:
       position: 75% 0
-    type: GGJ
+    type: Jam
     year: 2017
     tech: Board Game
 
   - name: Microwave Survival
     img: microwavesurvival.jpg
-    type: GGJ
+    type: Jam
     year: 2017
     tech: Unity
   
@@ -173,7 +178,7 @@ others:
       pixelated: true
     type: Hobby
     year: 2012
-    tech: RPG Maker 2003
+    tech: RM2K3
     awards:
         title: "Project of the Month - June / 2012"
         reviewer: "Santuário RPG Maker (extinct brazilian forum too =/ )"
