@@ -6,7 +6,7 @@ header {
   margin-bottom: var(--tob-space-48);
 }
 
-@media (--tob-media-mobile) {
+@media (--tob-media-tablet) {
   header {
     margin-bottom: var(--tob-space-32);
   }

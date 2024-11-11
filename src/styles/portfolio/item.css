@@ -5,7 +5,7 @@
 .tob-portfolio-item {
   position: relative;
   aspect-ratio: 1;
-  /* overflow: hidden; */
+  overflow: hidden;
   &:hover {
     background-color: transparent;
     padding: 0;
@@ -36,14 +36,26 @@
   object-fit: cover;
 }
 
-@media (--tob-media-mobile) {
+@media (--tob-media-tablet) {
   .tob-portfolio-item.tob-portfolio-item-wide-small {
     grid-column: 1 / 2 span;
     aspect-ratio: 16 / 8;
   }
 
   .tob-portfolio-item.tob-portfolio-item-wide-small:hover > .tob-portfolio-item-content {
-    padding: 2.5%;
+    padding: 1.95% 2.5%;
     transform: scale(1.025);
+  }
+}
+
+@media (--tob-media-phone) { 
+  .tob-portfolio-item.tob-portfolio-item-wide-small {
+    grid-column: 1;
+    aspect-ratio: 1;
+  }
+
+  .tob-portfolio-item.tob-portfolio-item-wide-small:hover > .tob-portfolio-item-content {
+    padding: 5%;
+    transform: scale(1.05);
   }
 }

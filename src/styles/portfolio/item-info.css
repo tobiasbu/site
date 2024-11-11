@@ -11,11 +11,9 @@ $tagSmallMargin: 8px;
   left: 0;
   right: 0;
   padding: 0%;
-  transform: scale(1);
   overflow: hidden;
-  padding: 0%;
   transform: scale(1);
-  transition-property: transform padding;
+  transition-property: transform, top, left, right, bottom;
   transition-duration: 233ms;
 }
 
@@ -27,12 +25,24 @@ $tagSmallMargin: 8px;
   transform: scale(1.05);
 }
 
-.tob-portfolio-item.tob-portfolio-item-wide-small:hover .tob-portfolio-item-info {
-  bottom: 5.1%;
-  left: 2.5%;
-  right: 2.5%;
-  top: 5.1%;
-  transform: scale(1.025);
+@media (--tob-media-tablet) {
+  .tob-portfolio-item.tob-portfolio-item-wide-small:hover .tob-portfolio-item-info {
+    bottom: 5.1%;
+    left: 2.5%;
+    right: 2.5%;
+    top: 5.1%;
+    transform: scale(1.025);
+  }
+}
+
+@media (--tob-media-phone) {
+  .tob-portfolio-item.tob-portfolio-item-wide-small:hover .tob-portfolio-item-info {
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    transform: scale(1.05);
+  }
 }
 
 .tob-portfolio-item-info-tag {
@@ -96,17 +106,49 @@ $tagSmallMargin: 8px;
 }
 
 @media (--tob-media-grid-break-1352) {
-  .tob-portfolio-grid-4 .tob-portfolio-item-info-tag,
-  .tob-portfolio-grid-5 .tob-portfolio-item-info-tag {
-    font-size: 16px;
-  }
-
   .tob-portfolio-grid-4 .tob-tag-award,
   .tob-portfolio-grid-5 .tob-tag-award {
     width: 32px;
     height: 32px;
   }
+}
 
+@media (--tob-media-tablet) {
+  .tob-portfolio-item-info-tag {
+    transition: none;
+  }
+
+  .tob-tag-type, .tob-tag-year, .tob-tag-tech, .tob-tag-award {
+    transform: translateY(0%) translateX(0%);
+  }
+
+  .tob-portfolio-grid-4 .tob-tag-award,
+  .tob-portfolio-grid-5 .tob-tag-award {
+    top: $tagMargin;
+    right: $tagMargin;
+  }
+
+  .tob-portfolio-grid-4 .tob-tag-type,
+  .tob-portfolio-grid-5 .tob-tag-type {
+    bottom: $tagMargin;
+    right: $tagMargin;
+  }
+  
+  .tob-portfolio-grid-4 .tob-tag-year,
+  .tob-portfolio-grid-5 .tob-tag-year {
+    bottom: $tagMargin;
+    left: $tagMargin;
+  }
+  
+  .tob-portfolio-grid-4 .tob-tag-tech,
+  .tob-portfolio-grid-5 .tob-tag-tech {
+    top: $tagMargin;
+    left: $tagMargin;
+  }
+}
+
+
+@media (--tob-media-grid-break-1352) or (--tob-media-phone) {
   .tob-portfolio-grid-4 .tob-tag-award,
   .tob-portfolio-grid-5 .tob-tag-award {
     top: $tagSmallMargin;
@@ -129,5 +171,15 @@ $tagSmallMargin: 8px;
   .tob-portfolio-grid-5 .tob-tag-tech {
     top: $tagSmallMargin;
     left: $tagSmallMargin;
+  }
+}
+
+
+
+@media (--tob-media-phone) {
+  .tob-portfolio-grid-4 .tob-portfolio-item-info-tag,
+  .tob-portfolio-grid-5 .tob-portfolio-item-info-tag {
+    font-size: 12px;
+    padding: 4px;
   }
 }

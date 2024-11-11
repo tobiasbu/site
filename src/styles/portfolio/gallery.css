@@ -31,8 +31,12 @@
 @mixin grid 4, 4;
 @mixin grid 5, 5;
 
-@media (--tob-media-mobile) {
+@media (--tob-media-tablet) {
   @mixin grid 3, 2;
   @mixin grid 4, 2;
   @mixin grid 5, 2;
+}
+
+@media (--tob-media-phone) {
+  @mixin grid 3, 1;
 }

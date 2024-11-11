@@ -25,7 +25,7 @@ nav > ul a {
   display: none;
 }
 
-@media (--tob-media-mobile) {
+@media (--tob-media-tablet) {
   .tob-mobile-menu-button {
     display: block;
     width: 36px;
