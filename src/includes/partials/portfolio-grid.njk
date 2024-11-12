@@ -9,13 +9,7 @@
     {% endif %}
 
     <a class="{{ className }}">
-      <div class="tob-portfolio-item-content">
-        <div class="tob-portfolio-item-background">
-          <span class="tob-portfolio-item-background__top-left"></span>
-          <span class="tob-portfolio-item-background__bottom-left"></span>
-          <span class="tob-portfolio-item-background__top-right"></span>
-          <span class="tob-portfolio-item-background__bottom-right"></span>
-        </div>
+      <div class="tob-portfolio-item-media">
 
       {% set workImg = "assets/img/work/" + workItem.img %}
 
@@ -46,18 +40,9 @@
 
     {% if gallery_info == true %}
       <div class="tob-portfolio-item-info">
-        <span class="tob-portfolio-item-info-tag tob-tag-type">{{ workItem.type }}</span>
-        <span class="tob-portfolio-item-info-tag tob-tag-year">{{ workItem.year }}</span>
-        {% if workItem.tech %}
-          <span class="tob-portfolio-item-info-tag tob-tag-tech">
-            {{ workItem.tech }}
-          </span>
-        {% endif %}
-        {% if workItem.awards %}
-          <span class="tob-portfolio-item-info-tag tob-tag-award">
-            {% svg "trophy" %}
-          </span>
-        {% endif %}
+        <h3>{{ workItem.name }}</h3>
+        <p class="tob-portfolio-item-info-tags">{{ workItem.tech }}  ▪  {{ workItem.type }}</p>
+        <time>{{ workItem.year }}</time>
       </div>
     {% endif %}
 

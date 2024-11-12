@@ -48,6 +48,9 @@
   --tob-color-secondary: #2fffdc; /* #14ffcd*/
   --tob-color-secondary-dark: #1fcfb2;/* #0e9270; */
   --tob-color-secondary-slight: #31ffdc;
+
+  --tob-color-gray: #676767;
+  --tob-color-light-gray: #e7e7e7;
 }
 
 /* THEMES */
@@ -58,9 +61,9 @@
   --tob-theme-link-bg: var(--tob-color-primary);
   --tob-theme-link-bg-shadow: var(--tob-color-light-0);
 
-  --tob-theme-portfolio-bg: var(--tob-color-primary);
-  --tob-theme-portfolio-tag: var(--tob-color-secondary);
-  --tob-theme-portfolio-tag-text: var(--tob-color-primary-variant);
+  --tob-theme-portfolio-tag: var(--tob-color-gray);
+  --tob-theme-portfolio-title-shadow: var(--tob-color-light-0);
+  --tob-theme-portfolio-bg: var(--tob-color-light);
 
   --tob-theme-title: var(--tob-color-secondary-dark);
 
@@ -73,6 +76,10 @@
   --tob-theme-link-text-shadow: var(--tob-color-primary-variant);
   --tob-theme-link-bg: var(--tob-color-secondary);
   --tob-theme-link-bg-shadow: var(--tob-color-primary-variant);
+
+  --tob-theme-portfolio-tag: var(--tob-color-light-gray);
+  --tob-theme-portfolio-title-shadow: var(--tob-color-primary-variant);
+  --tob-theme-portfolio-bg: var(--tob-color-dark);
 
   --tob-theme-title: var(--tob-color-primary);
 

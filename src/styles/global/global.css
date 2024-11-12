@@ -61,6 +61,12 @@ h2 {
   font-size: var(--tob-font-size-large);
 }
 
+h3 {
+  font-size: var(--tob-font-size);
+  line-height: 1;
+  font-weight: var(--tob-weight-bold);
+}
+
 @media (--tob-media-small) {
   h1 {
     font-size: var(--tob-font-size-large);

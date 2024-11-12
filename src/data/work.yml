@@ -10,6 +10,17 @@ favorites:
     tech: Unity
     slug: tennis-clash
 
+  - name: Home Lift Builder
+    img: tk.png
+    video: tk-lift-builder
+    style:
+      transform: scale(1.05)
+    type: Professional
+    year: 2019
+    tech: ThreeJS
+    company: blank studio
+    slug: lift-builder
+
   - name: Laserball
     subtitle: Arcade Game
     img: laserball.png
@@ -17,6 +28,24 @@ favorites:
     year: 2014-2016
     company: Ideia à Vista
     tech: Game Maker
+
+highlights:
+  grid: 4
+  items:
+
+  - name: magnetis app
+    img: magnetis.jpg
+    type: Professional
+    year: 2019-2021
+    tech: React Native
+    company: magnetis
+    slug: magnetis
+
+  - name: Package Man
+    img: packageman.gif
+    type: Hobby
+    year: 2019
+    tech: Unity
 
   - name: Koko-Kuba
     img: koko.png
@@ -30,43 +59,6 @@ favorites:
       reviewer: "Atomic Rocket Entertainment"
       event: "I Semana Atômica (2015)"
       link: https://www.facebook.com/AtomicRocketGames
-
-highlights:
-  grid: 4
-  items:
-
-  - name: Thyssenkrupp - Home Lift Builder
-    img: tk.png
-    video: tk-lift-builder
-    style:
-      transform: scale(1.05)
-    type: Professional
-    year: 2019
-    tech: ThreeJS
-    company: blank studio
-    slug: lift-builder
-
-  - name: Inside
-    img: inside.png
-    style: 
-      position: 0%
-      pixelated: true
-    type: Competition
-    year: 2012
-    tech: RM2k
-    awards:
-      - title: Winner of the contest "O Demônio dentro de nós" - 2012
-        reviewer: "Mundo RPG Maker (extinct brazilian forum)"
-      - title: Golden Game - November / 2013
-        reviewer: "Mundo RPG Maker"
-
-  - name: magnetis - Mobile app
-    img: magnetis.jpg
-    type: Professional
-    year: 2019-2021
-    tech: React Native
-    company: magnetis
-    slug: magnetis
 
   - name: Cida & Adão
     img: cida.png
@@ -82,11 +74,6 @@ others:
   grid: 5
   items:
 
-  - name: Package Man
-    img: packageman.gif
-    type: Hobby
-    year: 2019
-    tech: Unity
 
   - name: Neo-Bugreiro
     img: neobug.png
@@ -94,7 +81,7 @@ others:
       pixelated: true
     type: Student
     year: 2018
-    tech: Scintilla (JS)
+    tech: JavaScript
 
   - name: Sword & Shield
     img: swordandshield.png
@@ -132,7 +119,7 @@ others:
     img: untitledspace.png
     type: Student
     year: 2016
-    tech: Scintilla
+    tech: JavaScript
 
   - name: VRSoccer
     img: vrsoccer.jpg
@@ -162,7 +149,7 @@ others:
     img: robotkombat.jpg
     type: Student
     year: 2013
-    tech: SFML, C++
+    tech: C++
 
   - name: Legend of Zilda
     img: zilda.png
@@ -170,7 +157,21 @@ others:
       pixelated: true
     type: Student
     year: 2013
-    tech: SFML, C++
+    tech: C++
+  
+  - name: Inside
+    img: inside.png
+    style: 
+      position: 0%
+      pixelated: true
+    type: Competition
+    year: 2012
+    tech: RM2k
+    awards:
+      - title: Winner of the contest "O Demônio dentro de nós" - 2012
+        reviewer: "Mundo RPG Maker (extinct brazilian forum)"
+      - title: Golden Game - November / 2013
+        reviewer: "Mundo RPG Maker"
 
   - name: Diablo RPG Maker
     img: drmk.png
