@@ -15,8 +15,13 @@ export default async function(eleventyConfig) {
   eleventyConfig.addWatchTarget(`${INPUT_DIR}/styles/**/*.{css}`); 
   eleventyConfig.addWatchTarget(`${INPUT_DIR}/assets/**/*.{js,svg,png,jpeg}`);
 
-  // add yaml support
-  eleventyConfig.addDataExtension('yml,yaml', contents => yaml.load(contents));
+
+  eleventyConfig.addGlobalData('tob.builtAt', () => {
+    let now = new Date();
+    return new Intl.DateTimeFormat(
+      'en-US', { dateStyle: 'full', timeStyle: 'long' }
+    ).format(now);
+  });
 
   // add plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
