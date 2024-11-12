@@ -1,3 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-<path fill="currentColor" shape-rendering="crispEdges" d="M2.002 2.002v1.996h.994v1h2.002V3.002h-1V2.001zM7 0h2v3H7zM0 7h3v2H0zM2.005 13.996V12H3v-1h2.002v1.995h-1v1zM9 13v3H7v-3zM13.998 13.996V12h-.994v-1h-2.002v1.996h1v1zM13 7h3v2h-3zM11.004 5V3.005h.994v-1H14V4h-1v1zM7 4v1H6v1H5v1H4v2h1v1h1v1h1v1h2v-1h1v-1h1V9h1V7h-1V6h-1V5H9V4z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="none" />
+  <line x1="128" y1="40" x2="128" y2="16" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
+  <circle cx="128" cy="128" r="56" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+    stroke-width="20" />
+  <line x1="64" y1="64" x2="48" y2="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+    stroke-width="20" />
+  <line x1="64" y1="192" x2="48" y2="208" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
+  <line x1="192" y1="64" x2="208" y2="48" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
+  <line x1="192" y1="192" x2="208" y2="208" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
+  <line x1="40" y1="128" x2="16" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
+  <line x1="128" y1="216" x2="128" y2="240" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
+  <line x1="216" y1="128" x2="240" y2="128" fill="none" stroke="currentColor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="20" />
 </svg>
