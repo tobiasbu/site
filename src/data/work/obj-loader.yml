@@ -5,3 +5,5 @@ tags:
   - Student
 
 featuredImg: objloader.jpg
+
+excerpt: "A simple .obj file loader"

@@ -2,14 +2,60 @@ name: Inside
 date: 2012
 tags: 
   - RM2k
-  - Competition 
-awards:
-  - title: Winner of the contest "O Demônio dentro de nós" - 2012
-    reviewer: "Mundo RPG Maker (extinct brazilian forum)"
-  - title: Golden Game - November / 2013
-    reviewer: "Mundo RPG Maker"
+  - Competition
+started_at: 02-07-2012
+ended_at: 16-07-2012
 
 featuredImg: inside.png
 style:
   position: 0%
   pixelated: true
+
+awards:
+  - title: Winner of the contest "O Demônio dentro de nós" - 2012
+    reviewer: "Mundo RPG Maker (extinct brazilian forum)"
+  - title: '"Jogo de Ouro" - Nov. 2013'
+    reviewer: Mundo RPG Maker
+
+excerpt: Retro side-scroller a la Metroid-esque.
+
+_about: |-2
+
+  This is my first game published in the internet of the platform style.
+  It was made for the contest "The demon inside us" promoted by Mundo RPG Maker (extinct brazilian RPG Maker forum).
+  
+  It's present a retro design with a monochromatic color pallet (actually, less than 8 colors).
+  The game mechanics mixes Megaman and Metroid genres. The game is very short and was done in two weeks. 
+
+story: |-2
+
+  A group of divers finds a mysterious stone on the Arabian Sea.
+  The stone surface carries a unidentified type of cell. It turns out that implanting these cells in a human body, 
+  can significantly increase the person's capabilities. 
+  But only if this person is a pure heart and . 
+  
+  In order to conduct the experiment, the ideal candidate – twenty-sighted-year-old Marcos, the leader of the social movement for justice, is kidnapped in order to conduct the experiment. The young man decides to escape from an enemy laboratory shortly after the transplant, and he is helped by a mysterious voice in his head, presenting himself as Angelo.
+
+
+
+about_ptbr: >-
+  Esse é meu primeiro jogo no estilo plataforma e também o primeiro a ser finalizado e divulgado pela internet.
+  O jogo foi vencedor do concurso “Demônio dentro de nós”, que foi realizado no site Mundo RPG Maker.
+  
+  O jogo, em si, apresenta um design retrô com um palheta monocromática, tendo menos de 8 cores.
+  É baseado em jogos como Metroid e Megaman.
+  A engine usada foi o RPG Maker 2000 + Destiny Patch 2.0. 
+  
+  O jogo é curto mas espero que ele sirva de diversão! 
+
+story_ptbr: >-
+  Um grupo de cientistas descobriram uma rocha carregada por células capazes de dar o domínio de poderes sobrenaturais. 
+  Os testes realizados com as cobaias, sempre resultaram negativos. As células apenas aceitavam um tipo de perfil especifico;
+  uma pessoa cujo caráter, fosse verdadeiro e justiceiro.
+
+  Ao mesmo tempo que decorria esses fatos, a sociedade se mobilizava em movimentos para combater os governos corruptos que
+  ditavam o poder. Um dos líderes desses movimentos, Marcos cuja ambição era justiça e liberdade era sem dúvida,
+  um perfil ideal para as células.
+
+  Os cientistas ligados ao governo, encomendaram um sequestro e logo submetido a operação de inserção das células em seu corpo.
+  Ficando em um cativeiro laboratório desconhecido, Marcos é a chave para operação e assim começa o acaso de sua vida...

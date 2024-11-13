@@ -1,0 +1,70 @@
+---
+layout: base.njk
+---
+
+{% from "macros/work.njk" import macro_work_date %}
+{% from "macros/commons.njk" import macro_tags %}
+
+{% macro macro_award(award) %}
+<li>
+  {{ award | dump }}
+</li>
+{% endmacro %}
+
+<article class="tob-wrapper">
+  <header class="tob-page-header tob-portfolio-item-info">
+    <h1>
+      {{ item.name }}
+      {% if item.subtitle %}
+        - {{ item.subtitle }}
+      {% endif %}
+    </h1>
+    {% if item.tags %}
+      {{  macro_tags(item.tags) }}
+    {% endif %}
+    <p class="tob-date">
+      {{ macro_work_date(item.date) }}
+    </p>
+  </header>
+
+  {% if item.excerpt %}
+    <p class="tob-excerpt">
+      {% markdown item.excerpt %}
+    </p>
+  {% endif %}
+{# 
+  {% if item.awards %}
+    <ul class="tob-awards">
+      {{ item.awards | map(macro_award) | safe }}
+    </ul>
+  {% endif %} #}
+
+  {% if item.about %}
+    <h2>About</h2>
+
+    {% markdown %}
+      {{ item.about }}
+    {% endmarkdown %}
+
+    {% if item.about %}
+      <h2>Story</h2>
+
+      {% markdown %}
+        {{ item.story }}
+      {% endmarkdown %}
+    {% endif %}
+  {% else %}
+    <h2>Coming soon...</h2>
+
+    <img src="/assets/img/pika-under-construction.gif" style="width: 50%;" />
+
+    <p>Page under construction!</p>
+    <p>I'm writing each page project and releasing it in demand. Please visit us again soon. Thank you for understanding!</p>
+  {% endif %}
+
+
+
+
+  {{ content | safe }}
+
+</article>
