@@ -63,7 +63,7 @@
   /* text-shadow: 1px 1px var(--tob-theme-link-text-shadow); */
 }
 
-.tob-portfolio-item-info-tags {
+.tob-portfolio-item-info .tob-tags {
   margin: 0;
   width: auto;
 }
