@@ -1,18 +1,19 @@
 import { extname } from 'node:path';
-import { readdir } from 'node:fs/promises';
+import { readdirSync } from 'node:fs';
 
 const VIDEOS_INPUT = "./src/assets/video";
 const CAPTURE_OPTIONS = /(?:(\w+)=([\w\d \.:;%()]+)?)+\|?/gm;
+const videoFiles = readdirSync(VIDEOS_INPUT, { recursive: true });
 
-export default async function videoShortcode(videoName, poster = '', options = '') {
-
-  const files = await readdir(VIDEOS_INPUT, { recursive: true });
+export default function videoShortcode(videoName, poster = '', options = '') {
   const sources = [];
-  files.map((f) => {
+  videoFiles.map((f) => {
     if (f.includes(videoName)) {
       sources.push(`assets/video/${f}`);
     }
   });
+
+  sources.reverse();
 
   let parsedStyle = ""
   if (typeof options === "string") {
@@ -36,8 +37,6 @@ export default async function videoShortcode(videoName, poster = '', options = '
       }
       return result;
     }, "")
-
-   
   }
 
   const result =  `

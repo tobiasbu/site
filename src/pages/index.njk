@@ -14,11 +14,11 @@ permalink: /index.html
   {% set gallery_info = true %}
   
   {% set gallery =  work.favorites %}
-  {% include "partials/portfolio-grid.njk" %}
+  {% include "partials/portfolio/gallery.njk" %}
 
   {% set gallery =  work.highlights %}
-  {% include "partials/portfolio-grid.njk" %}
+  {% include "partials/portfolio/gallery.njk" %}
 
   {% set gallery =  work.others %}
-  {% include "partials/portfolio-grid.njk" %}
+  {% include "partials/portfolio/gallery.njk" %}
 </section>

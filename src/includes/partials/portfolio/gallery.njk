@@ -1,0 +1,75 @@
+
+{% from "macros/work.njk" import macro_work_date %}
+{% from "macros/commons.njk" import macro_tags %}
+
+{% macro macro_work_item(workItem, workItemAdditionalClass = "") %}
+  {% if workItem.slug %}
+    {% set slug = workItem.slug %}
+  {% else %}
+    {% set slug = workItem.name | slugify %}
+  {% endif %}
+
+  {% set slug = "/work/" + slug + ".html" %}
+
+  <a class="tob-portfolio-item{{ workItemAdditionalClass }}" href="{{ slug }}">
+    <div class="tob-portfolio-item-media">
+
+      {% set workImg = "assets/img/work/" + workItem.featuredImg %}
+
+      {% if workItem.video %}
+
+        {% video workItem.video, workImg, workItem.style %}
+
+      {% else %}
+
+        {% set style = "" %}
+
+        {% if workItem.style.position %}
+          {% set style = style + "object-position: " + workItem.style.position + ";" %}
+        {% endif %}
+
+        {% if workItem.style.pixelated %}
+          {% set style = style + "image-rendering: pixelated;" %}
+        {% endif %}
+
+        <img src="{{ workImg }}" 
+            aria-label="{{ workItem.name }}" 
+            alt="{{ workItem.name }}" 
+            {% if style %} style="{{ style }}" {% endif %}
+        />
+      
+      {% endif %}
+
+    </div>
+
+    {% if gallery_info == true %}
+
+      <div class="tob-portfolio-item-info">
+        <h3>{{ workItem.name }}
+        {% if workItem.subtitle %}
+          - {{ workItem.subtitle }}
+        {% endif %}
+        </h3>
+
+        {{ macro_tags(workItem.tags) }}
+        {{ macro_work_date(workItem.date) }}
+        
+      </div>
+    {% endif %}
+  </a>
+{% endmacro %}
+
+<div class="tob-portfolio-gallery tob-portfolio-grid-{{ gallery.grid }}">
+  {% for workSlug in gallery.items %}
+
+    {% set workItem = work[workSlug] %}
+
+    {% set workItemAdditionalClass = "" %}
+    {% if gallery.grid == 3 and loop.last %}
+      {% set workItemAdditionalClass = " tob-portfolio-item-wide-small" %}
+    {% endif %}
+
+    {{ macro_work_item(workItem, workItemAdditionalClass) }}
+
+  {% endfor %}
+</div>
