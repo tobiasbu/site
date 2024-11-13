@@ -1,0 +1,9 @@
+---
+layout: work.njk
+pagination:
+  data: work
+  size: 1
+  alias: item
+  resolve: values
+permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
+---
