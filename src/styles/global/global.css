@@ -130,6 +130,11 @@ figure {
   margin: 0;
 }
 
+figcaption {
+  font-size: var(--tob-font-size-small);
+  color: var(--tob-theme-caption);
+}
+
 img, video {
   width: 100%;
 }

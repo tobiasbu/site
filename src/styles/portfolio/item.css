@@ -51,9 +51,8 @@
 
 .tob-portfolio-item-info {
   position: relative;
-  color: var(--tob-theme-text);
-  font-size: 16px;
-  color: var(--tob-theme-portfolio-tag);
+  color: var(--tob-theme-caption);
+  font-size: var(--tob-font-size-small);
   line-height: 1.5;
 }
 
