@@ -3,6 +3,7 @@ import yaml from 'js-yaml';
 import plugins from './src/config/plugins.js';
 import shortcodes from './src/config/shortcodes.js';
 import tags from './src/config/tags.js';
+import filters from './src/config/filters.js';
 
 const INPUT_DIR = "src";
 
@@ -39,6 +40,10 @@ export default async function(eleventyConfig) {
   // add shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('video', shortcodes.video);
+  
+  // add filters
+  eleventyConfig.addFilter('contains', filters.contains);
+  eleventyConfig.addFilter('split', filters.split);
 
   // add tags
   tags.addMarkdownTag(eleventyConfig);
