@@ -5,6 +5,7 @@
   --tob-base-font-size: 20px;
 
   /* FONT SIZE */
+  --tob-font-size-small: 16px;
   --tob-font-size: 20px;
   --tob-font-size-medium: 26px;
   --tob-font-size-large: 30px;
@@ -52,7 +53,7 @@
   --tob-color-secondary-slight: #31ffdc;
 
   --tob-color-gray: #676767;
-  --tob-color-light-gray: #e7e7e7;
+  --tob-color-light-gray: #e7e7e7; 
 }
 
 /* THEMES */
@@ -63,14 +64,13 @@
   --tob-theme-link-bg: var(--tob-color-primary);
   --tob-theme-link-bg-shadow: var(--tob-color-light-0);
 
-  --tob-theme-portfolio-tag: var(--tob-color-gray);
   --tob-theme-portfolio-title-shadow: var(--tob-color-light-0);
   --tob-theme-portfolio-bg: var(--tob-color-light);
-
+  
   --tob-theme-title: var(--tob-color-secondary-dark);
-
-  --tob-theme-bg: var(--tob-color-light);
   --tob-theme-text: var(--tob-color-dark);
+  --tob-theme-caption: var(--tob-color-gray);
+  --tob-theme-bg: var(--tob-color-light);
 }
 
 :root[data-theme='dark'] {
@@ -79,14 +79,13 @@
   --tob-theme-link-bg: var(--tob-color-secondary);
   --tob-theme-link-bg-shadow: var(--tob-color-primary-variant);
 
-  --tob-theme-portfolio-tag: var(--tob-color-light-gray);
   --tob-theme-portfolio-title-shadow: var(--tob-color-primary-variant);
   --tob-theme-portfolio-bg: var(--tob-color-dark);
-
+  
   --tob-theme-title: var(--tob-color-primary);
-
-  --tob-theme-bg: var(--tob-color-dark);
   --tob-theme-text: var(--tob-color-light);
+  --tob-theme-caption: var(--tob-color-light-gray);
+  --tob-theme-bg: var(--tob-color-dark);
 }
 
 /* MEDIA QUERIES */
