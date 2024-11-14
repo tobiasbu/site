@@ -1,19 +1,18 @@
 
-/* HEADER */
+/* SITE HEADER */
 
-header {
+.tob-header {
   padding: var(--tob-space-32) 0;
   margin-bottom: var(--tob-space-48);
 }
 
 @media (--tob-media-tablet) {
-  header {
+  .tob-header {
     margin-bottom: var(--tob-space-32);
   }
 }
 
-
-body.tob-menu-active header > .tob-wrapper {
+body.tob-menu-active .tob-header > .tob-wrapper {
   position: fixed;
   z-index: 1;
   width: 100%;
