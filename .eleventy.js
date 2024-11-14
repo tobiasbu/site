@@ -1,6 +1,7 @@
 import yaml from 'js-yaml';
 
 import plugins from './src/config/plugins.js';
+import globaldata from './src/config/globaldata.js';
 import shortcodes from './src/config/shortcodes.js';
 import tags from './src/config/tags.js';
 import filters from './src/config/filters.js';
@@ -25,12 +26,6 @@ export default async function(eleventyConfig) {
     return parsedYaml;
   });
 
-  eleventyConfig.addGlobalData('tob.builtAt', () => {
-    let now = new Date();
-    return new Intl.DateTimeFormat(
-      'en-US', { dateStyle: 'full', timeStyle: 'long' }
-    ).format(now);
-  });
 
   // add plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
@@ -48,6 +43,9 @@ export default async function(eleventyConfig) {
 
   // add tags
   tags.addMarkdownTag(eleventyConfig);
+
+  // add global data
+  globaldata(eleventyConfig);
 
   // add bundles
   eleventyConfig.addBundle("css", {hoist: true});
