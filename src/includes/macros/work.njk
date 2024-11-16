@@ -1,0 +1,19 @@
+
+{% macro macro_work_date(workYear) %}
+  {% if workYear | contains("-") %}
+
+    {% for yr in (workYear | split("-")) %}
+      {% if yr | int %}
+        <time datetime="{{ yr | trim }}">{{ yr | trim }}</time>
+      {% else %}
+        <span>{{ yr | trim }}</span>
+      {% endif %}
+      {% if not loop.last %}
+      -
+      {% endif %}
+    {% endfor %}
+
+  {% else %}
+    <time datetime="{{ workYear }}">{{ workYear }}</time>
+  {% endif %}
+{% endmacro %}
