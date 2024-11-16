@@ -1,0 +1,13 @@
+name: Home Lift Builder
+date: 2019
+tags:
+  - ThreeJS
+  - Professional
+company: blank studio
+slug: lift-builder
+
+featuredImg: tk.png
+video: tk-lift-builder
+style:
+  transform: scale(1.05)
+
