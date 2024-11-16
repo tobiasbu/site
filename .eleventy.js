@@ -15,6 +15,14 @@ export default async function(eleventyConfig) {
   eleventyConfig.addWatchTarget(`${INPUT_DIR}/styles/**/*.{css}`); 
   eleventyConfig.addWatchTarget(`${INPUT_DIR}/assets/**/*.{js,svg,png,jpeg}`);
 
+  // add yaml support for data files
+  eleventyConfig.addDataExtension('yml,yaml', (contents, filePath) => {
+    const parsedYaml = yaml.load(contents);
+    if (!parsedYaml) {
+      throw new Error(`failed to parse yml data from file ${filePath}`)
+    }
+    return parsedYaml;
+  });
 
   eleventyConfig.addGlobalData('tob.builtAt', () => {
     let now = new Date();
