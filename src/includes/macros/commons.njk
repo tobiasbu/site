@@ -1,0 +1,6 @@
+
+{% macro macro_tags(tags) %}
+  <ul class="tob-tags">
+    {{ tags | map("<li>$1</li>") | safe }}
+  </ul>
+{% endmacro %}
