@@ -12,13 +12,13 @@ permalink: /index.html
 
 <section class="tob-portfolio">
   {% set gallery_info = true %}
-  
-  {% set gallery =  work.favorites %}
+
+  {% set gallery =  portfolio.favorites %}
   {% include "partials/portfolio/gallery.njk" %}
 
-  {% set gallery =  work.highlights %}
+  {% set gallery =  portfolio.highlights %}
   {% include "partials/portfolio/gallery.njk" %}
 
-  {% set gallery =  work.others %}
+  {% set gallery =  portfolio.others %}
   {% include "partials/portfolio/gallery.njk" %}
 </section>
