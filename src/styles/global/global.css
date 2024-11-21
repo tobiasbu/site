@@ -80,6 +80,14 @@ p {
   margin: var(--tob-space-24) 0;
 }
 
+blockquote {
+  margin: 0;
+  background: var(--tob-theme-bg);
+  padding: 16px;
+  border-left: 4px solid var(--tob-theme-title);
+  font-style: italic;
+}
+
 /* LINKS  */
 
 a, button {

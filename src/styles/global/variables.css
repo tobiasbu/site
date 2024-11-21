@@ -20,6 +20,8 @@
   --tob-line-height: 1.5;
 
    /* SPACING */
+  --tob-space-4: 4px;
+  --tob-space-8: 8px;
   --tob-space-16: 16px;
   --tob-space-24: 24px;
   --tob-space-32: 32px;

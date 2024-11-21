@@ -1,0 +1,40 @@
+
+
+.tob-page-header {
+  position: relative;
+  color: var(--tob-theme-caption);
+  font-size: var(--tob-font-size-small);
+  line-height: 1.5;
+  margin-bottom: var(--tob-space-32);
+}
+
+.tob-page-header p {
+  margin: var(--tob-space-8) 0 0;
+}
+
+/* TAGS */
+
+ul.tob-tags {
+  padding: 0;
+  list-style: none;
+}
+
+.tob-tags li {
+  display: inline-block;
+}
+
+.tob-tags li:not(:last-child)::after {
+  display: inline-block;
+  content: "▪";
+  padding: 0 var(--tob-space-8);
+}
+
+/* EXCERPT and AWARDS */
+
+.tob-excerpt {
+  margin: 0;
+  background: var(--tob-theme-bg);
+  padding: var(--tob-space-16);
+  border-left: var(--tob-space-4) solid var(--tob-theme-title);
+  font-style: italic;
+}

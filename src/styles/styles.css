@@ -6,5 +6,7 @@
 @import 'global/header.css';
 @import 'global/navigation.css';
 @import 'global/about.css';
+@import 'global/page.css';
 
 @import 'portfolio/portfolio.css';
+
