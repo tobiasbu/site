@@ -34,6 +34,10 @@ function Markdown(nunjucksEngine) {
   this.blockTag = function(environment, body) {
     return new nunjucksEngine.runtime.SafeString(markdownParser.render(body()));
   }
+
+  this.varTag = function(environment, line) {
+    return new nunjucksEngine.runtime.SafeString(markdownParser.renderInline(line));
+  }
 };
 
 // Usage: {% markdown myVar %} where myVar has a value of "one-line"
