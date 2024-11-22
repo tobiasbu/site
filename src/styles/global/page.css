@@ -24,9 +24,13 @@ ul.tob-tags {
 }
 
 .tob-tags li:not(:last-child)::after {
+  content: "";
   display: inline-block;
-  content: "▪";
-  padding: 0 var(--tob-space-8);
+  margin: 0 var(--tob-space-8);
+  vertical-align: middle;
+  width: 4px;
+  height: 4px;
+  background-color: var(--tob-theme-caption);
 }
 
 /* EXCERPT and AWARDS */

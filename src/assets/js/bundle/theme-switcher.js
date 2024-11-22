@@ -44,13 +44,13 @@ window.addEventListener("load", () => {
   applyTheme();
 }, false);
 
-// sync with system changes
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches: isDark}) => {
-  if (!__tob_Theme.loadedFromStorage) {
-    __tob_Theme.value = isDark ? 'dark' : 'light';
-    setPreference();
-  }
-});
+// DISABLED - sync with system changes
+// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', ({matches: isDark}) => {
+//   if (!__tob_Theme.loadedFromStorage) {
+//     __tob_Theme.value = isDark ? 'dark' : 'light';
+//     setPreference();
+//   }
+// });
 
 __tob_Theme.value = getPreference();
 applyTheme();
