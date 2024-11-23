@@ -26,17 +26,16 @@ ul.tob-tags {
 .tob-tags li:not(:last-child)::after {
   content: "";
   display: inline-block;
-  margin: 0 var(--tob-space-8);
-  vertical-align: middle;
+  margin: 0 var(--tob-space-8) var(--tob-space-4);
   width: 4px;
   height: 4px;
   background-color: var(--tob-theme-caption);
 }
 
+
 /* EXCERPT and AWARDS */
 
 .tob-excerpt {
-  margin: 0;
   background: var(--tob-theme-bg);
   padding: var(--tob-space-16);
   border-left: var(--tob-space-4) solid var(--tob-theme-title);

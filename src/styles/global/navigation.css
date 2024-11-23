@@ -68,9 +68,15 @@ nav > ul a {
   }
 }
 
-@media (--tob-media-small) {
+@media (--tob-media-tablet) {
   nav {
     padding: 108px var(--tob-space-24) var(--tob-space-24);
+  }
+}
+
+@media (--tob-media-phone) {
+  nav {
+    padding: 108px var(--tob-space-16) var(--tob-space-16);
   }
 }
 

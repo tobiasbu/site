@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  background-image: url('assets/img/bg-invert.png'); 
+  background-image: url('/assets/img/bg-invert.png'); 
   background-attachment: fixed;
   image-rendering: crisp-edges;
   font-family: var(--tob-font-family);
@@ -29,12 +29,12 @@ body {
   color: var(--tob-theme-text);
 }
 
-body.tob-menu-active {
-  position: fixed;
+:root[data-theme='dark'] body {
+  background-image: url('/assets/img/bg.png'); 
 }
 
-:root[data-theme='dark'] body {
-  background-image: url('assets/img/bg.png'); 
+body.tob-menu-active {
+  position: fixed;
 }
 
 /* TEXT SELECTION */ 
@@ -88,6 +88,12 @@ blockquote {
   font-style: italic;
 }
 
+/* LIST */
+
+ul {
+  list-style: square;
+}
+
 /* LINKS  */
 
 a, button {
@@ -114,14 +120,19 @@ section {
   padding: 0 var(--tob-space-32);
 }
 
-@media (--tob-media-small) {
+@media (--tob-media-tablet) {
+  section {
+    margin: var(--tob-space-64) 0;
+  }
   .tob-wrapper {
     padding: 0 var(--tob-space-24);
   }
+}
 
-  section {
-    margin: var(--tob-space-64) 0;
-  }  
+@media (--tob-media-phone) {
+  .tob-wrapper {
+    padding: 0 var(--tob-space-16);
+  }
 }
 
 /* ASSETS */

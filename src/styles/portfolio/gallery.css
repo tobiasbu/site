@@ -3,13 +3,13 @@
 
 .tob-portfolio-gallery {
   display: grid;
-  gap: var(--tob-space-32);
+  gap: var(--tob-space-24);
   padding: 0 var(--tob-space-32);
   margin: 0 auto var(--tob-space-32) auto;
   max-width: var(--tob-view-width-max-grid);
 }
 
-@media (--tob-media-small) {
+@media (--tob-media-tablet) {
   .tob-portfolio-gallery {
     gap: var(--tob-space-24);
     padding: 0 var(--tob-space-24);
@@ -17,27 +17,34 @@
   }
 }
 
+@media (--tob-media-phone) {
+  .tob-portfolio-gallery {
+    gap: var(--tob-space-16);
+    padding: 0 var(--tob-space-16);
+  }
+}
 
-@define-mixin grid $sizeName, $columnSize {
+
+@define-mixin portfolioGrid $sizeName, $columnSize {
   .tob-portfolio-grid-$(sizeName) {
     grid-template-columns: repeat($columnSize, minmax(0,1fr));
   }
 }
 
 
-@mixin grid 1, 1;
-@mixin grid 2, 2;
-@mixin grid 3, 3;
-@mixin grid 4, 4;
-@mixin grid 5, 5;
+@mixin portfolioGrid 1, 1;
+@mixin portfolioGrid 2, 2;
+@mixin portfolioGrid 3, 3;
+@mixin portfolioGrid 4, 4;
+@mixin portfolioGrid 5, 5;
 
 @media (--tob-media-tablet) {
-  @mixin grid 3, 2;
-  @mixin grid 4, 2;
-  @mixin grid 5, 2;
+  @mixin portfolioGrid 3, 2;
+  @mixin portfolioGrid 4, 2;
+  @mixin portfolioGrid 5, 2;
 }
 
 @media (--tob-media-phone) {
-  @mixin grid 3, 1;
-  @mixin grid 4, 1;
+  @mixin portfolioGrid 3, 1;
+  @mixin portfolioGrid 4, 1;
 }
