@@ -40,6 +40,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter('contains', filters.contains);
   eleventyConfig.addFilter('split', filters.split);
   eleventyConfig.addFilter('map', filters.map);
+  eleventyConfig.addFilter('readDir', filters.readDir);
 
   // add tags
   tags.addMarkdownTag(eleventyConfig);
