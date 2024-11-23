@@ -1,5 +1,6 @@
 
 /**
+ * Check if a value contains n values.
  * @param {string | number} value 
  * @param {string | Array<string>} needle 
  * @returns {boolean}
