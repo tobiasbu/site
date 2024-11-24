@@ -1,5 +1,7 @@
 import yaml from 'js-yaml';
 
+import markdownParser from "./src/config/shared/markdownParser.js";
+
 import plugins from './src/config/plugins.js';
 import globaldata from './src/config/globaldata.js';
 import shortcodes from './src/config/shortcodes.js';
@@ -26,6 +28,8 @@ export default async function(eleventyConfig) {
     return parsedYaml;
   });
 
+  // set library for markdown
+  eleventyConfig.setLibrary("md", markdownParser);
 
   // add plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);

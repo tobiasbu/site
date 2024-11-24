@@ -1,8 +1,6 @@
 // by Chris Burnell: https://chrisburnell.com/article/some-eleventy-filters/#markdown-format
 
-import markdownIt from 'markdown-it';
-
-const markdownParser = markdownIt();
+import markdownParser from "../shared/markdownParser.js";
 
 function Markdown(nunjucksEngine) {
   this.tags = ["markdown"];
@@ -31,11 +29,12 @@ function Markdown(nunjucksEngine) {
 
   // Markdown rendering for the block. Pretty simple, just get the body text and pass
   // it through the markdown renderer.
-  this.blockTag = function(environment, body) {
-    return new nunjucksEngine.runtime.SafeString(markdownParser.render(body()));
+  this.blockTag = function(context, body) {
+    const result = new nunjucksEngine.runtime.SafeString(markdownParser.render(body()));
+    return result;
   }
 
-  this.varTag = function(environment, line) {
+  this.varTag = function(context, line) {
     return new nunjucksEngine.runtime.SafeString(markdownParser.renderInline(line));
   }
 };
