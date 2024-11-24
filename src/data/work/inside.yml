@@ -19,24 +19,37 @@ awards:
 
 excerpt: Retro side-scroller a la Metroid-esque.
 
-_about: |-2
+imgGallery: 
+  enabled: true
+  type: feat1x2
+
+links:
+  RMteka - article about Inside written by polish RPG Maker community: https://www.rmteka.pl/inside-2/
+  Gameplay video by Kevin OfNine: https://www.youtube.com/watch?v=FI8NYg3EZxw
+
+about: |-2
 
   This is my first game published in the internet of the platform style.
-  It was made for the contest "The demon inside us" promoted by Mundo RPG Maker (extinct brazilian RPG Maker forum).
+  It was made for the contest "The demon inside us" (in brazilian, "O Demônio dentro de nós") 
+  promoted by _Mundo RPG Maker_ (extinct brazilian RPG Maker forum).
+
+  {% figure "work/others/inside-oddn-winner-banner.png","Winner banner of the 'The demon inside us' contest" %}
   
   It's present a retro design with a monochromatic color pallet (actually, less than 8 colors).
-  The game mechanics mixes Megaman and Metroid genres. The game is very short and was done in two weeks. 
+  The game mechanics mixes Mega-man and Metroid genres. The game is very short and was done in two weeks. 
 
 story: |-2
 
   A group of divers finds a mysterious stone on the Arabian Sea.
   The stone surface carries a unidentified type of cell. It turns out that implanting these cells in a human body, 
-  can significantly increase the person's capabilities. 
-  But only if this person is a pure heart and . 
+  can significantly increase the person's capabilities. But only if this is a pure heart and righteous person. 
+
+  At the same time society was organizing itself into social movements to overthrow corrupt politicians.
+  One of the leaders of these movements was Marcos, a young man with hunger for justice but also the ideal candidate
+  for the cells experiment.
   
-  In order to conduct the experiment, the ideal candidate – twenty-sighted-year-old Marcos, the leader of the social movement for justice, is kidnapped in order to conduct the experiment. The young man decides to escape from an enemy laboratory shortly after the transplant, and he is helped by a mysterious voice in his head, presenting himself as Angelo.
-
-
+  Marcos is kidnapped by the government and cells are transplanted to his body. 
+  The surgery is successful and thus begins Marcos' quest for freedom...
 
 about_ptbr: >-
   Esse é meu primeiro jogo no estilo plataforma e também o primeiro a ser finalizado e divulgado pela internet.
