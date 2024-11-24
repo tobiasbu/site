@@ -42,50 +42,52 @@
   --tob-color-accent: #68874e;
   */
   
-  /* RED THEME - COLORS */ 
-  --tob-color-dark: #290006;
-  --tob-color-light: #fffef7;
-  --tob-color-light-0: #d6d1b1; /* #ebe8d2; */
-  --tob-color-primary: #eb0032;
-  --tob-color-primary-variant: #75001e;
-  --tob-color-secondary: #2fffdc; /* #14ffcd*/
-  --tob-color-secondary-dark: #1fcfb2;/* #0e9270; */
-  --tob-color-secondary-slight: #31ffdc;
+  /* COLORS */ 
+  --tob-color-beige-subtle: #f4f1ea;
+  --tob-color-beige: #d6d1b1; /* #ebe8d2; */
+  --tob-color-red: #eb0032;
+  --tob-color-red-bold: #75001e;
+  --tob-color-red-dark: #290006;
+  --tob-color-cyan: #2fffdc; /* #14ffcd*/
+  --tob-color-cyan-bold: #1fcfb2;/* #0e9270; */
 
+  --tob-color-white: #fffef7;
+  --tob-color-gray-subtle: #e7e7e7;
   --tob-color-gray: #676767;
-  --tob-color-light-gray: #e7e7e7; 
 }
 
 /* THEMES */
 :root,
 :root[data-theme='light'] {
-  --tob-theme-link-text: var(--tob-color-primary);
-  --tob-theme-link-text-shadow: var(--tob-color-light);
-  --tob-theme-link-bg: var(--tob-color-primary);
-  --tob-theme-link-bg-shadow: var(--tob-color-light-0);
+  --tob-theme-link-text: var(--tob-color-red);
+  --tob-theme-link-text-shadow: var(--tob-color-white);
+  --tob-theme-link-bg: var(--tob-color-red);
+  --tob-theme-link-bg-shadow: var(--tob-color-beige);
 
-  --tob-theme-portfolio-title-shadow: var(--tob-color-light-0);
-  --tob-theme-portfolio-bg: var(--tob-color-light);
+  --tob-theme-portfolio-title-shadow: var(--tob-color-beige);
+  --tob-theme-portfolio-bg: var(--tob-color-white);
   
-  --tob-theme-title: var(--tob-color-secondary-dark);
-  --tob-theme-text: var(--tob-color-dark);
+  --tob-theme-title: var(--tob-color-cyan-bold);
+  --tob-theme-text: var(--tob-color-red-dark);
   --tob-theme-caption: var(--tob-color-gray);
-  --tob-theme-bg: var(--tob-color-light);
+  --tob-theme-bg: var(--tob-color-white);
+  --tob-theme-footer: var(--tob-color-beige-subtle);
 }
 
 :root[data-theme='dark'] {
-  --tob-theme-link-text: var(--tob-color-secondary);
-  --tob-theme-link-text-shadow: var(--tob-color-primary-variant);
-  --tob-theme-link-bg: var(--tob-color-secondary);
-  --tob-theme-link-bg-shadow: var(--tob-color-primary-variant);
+  --tob-theme-link-text: var(--tob-color-cyan);
+  --tob-theme-link-text-shadow: var(--tob-color-red-bold);
+  --tob-theme-link-bg: var(--tob-color-cyan);
+  --tob-theme-link-bg-shadow: var(--tob-color-red-bold);
 
-  --tob-theme-portfolio-title-shadow: var(--tob-color-primary-variant);
-  --tob-theme-portfolio-bg: var(--tob-color-dark);
+  --tob-theme-portfolio-title-shadow: var(--tob-color-red-bold);
+  --tob-theme-portfolio-bg: var(--tob-color-red-dark);
   
-  --tob-theme-title: var(--tob-color-primary);
-  --tob-theme-text: var(--tob-color-light);
-  --tob-theme-caption: var(--tob-color-light-gray);
-  --tob-theme-bg: var(--tob-color-dark);
+  --tob-theme-title: var(--tob-color-red);
+  --tob-theme-text: var(--tob-color-white);
+  --tob-theme-caption: var(--tob-color-gray-subtle);
+  --tob-theme-bg: var(--tob-color-red-dark);
+  --tob-theme-footer: var(--tob-color-red-dark);
 }
 
 /* MEDIA QUERIES */

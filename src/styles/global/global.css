@@ -40,12 +40,12 @@ body.tob-menu-active {
 /* TEXT SELECTION */ 
 
 ::selection {
-  color: var(--tob-color-light);
-  background: var(--tob-color-primary);
-  padding: 2px;
-  text-shadow: -1px -1px var(--tob-color-primary-variant);
-  box-shadow: 4px 4px var(--tob-color-primary-variant);
+  color: var(--tob-color-white);
+  background: var(--tob-color-red);
+  text-shadow: -1px -1px var(--tob-color-red-bold);
+  /* box-shadow: 4px 4px var(--tob-color-red-bold); */
 }
+
 
 /* HEADING AND TEXT */
 
@@ -154,6 +154,26 @@ img, video {
 /* FOOTER */
 
 footer {
-  padding: var(--tob-space-24);
-  margin-top: var(--tob-space-48);
+  margin-top: var(--tob-space-80);
+  padding: var(--tob-space-32);
+  /* background-color: var(--tob-theme-bg); */
+}
+
+@media (--tob-media-tablet) {
+  footer {
+    margin-top: var(--tob-space-64);
+    padding: var(--tob-space-24);
+  }
+}
+
+@media (--tob-media-phone) {
+  footer {
+    padding: var(--tob-space-16);
+  }
+}
+
+.tob-copyright {
+  margin: 0;
+  font-size: var(--tob-font-size-small);
+  color: var(--tob-theme-caption);
 }
