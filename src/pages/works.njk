@@ -56,7 +56,7 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
     <h2>About</h2>
     {{ item.about | renderContent("njk,md") | safe }}
 
-    {% if item.about %}
+    {% if item.story %}
       <h2>Story</h2>
       {% markdown %}
         {{ item.story }}
