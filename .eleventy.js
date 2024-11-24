@@ -1,3 +1,4 @@
+import { EleventyRenderPlugin } from "@11ty/eleventy";
 import yaml from 'js-yaml';
 
 import markdownParser from "./src/config/shared/markdownParser.js";
@@ -32,6 +33,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownParser);
 
   // add plugins
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
   eleventyConfig.addPlugin(plugins.jsConfig);
