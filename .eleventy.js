@@ -35,6 +35,7 @@ export default async function(eleventyConfig) {
   // add shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('video', shortcodes.video);
+  eleventyConfig.addShortcode('figure', shortcodes.figure);
   
   // add filters
   eleventyConfig.addFilter('contains', filters.contains);

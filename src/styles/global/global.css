@@ -138,7 +138,8 @@ section {
 /* ASSETS */
 
 figure {
-  margin: 0;
+  margin: var(--tob-space-32) 0;
+  text-align: center;
 }
 
 figcaption {
@@ -147,7 +148,7 @@ figcaption {
 }
 
 img, video {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* FOOTER */
