@@ -17,3 +17,18 @@
     <time datetime="{{ workYear }}">{{ workYear }}</time>
   {% endif %}
 {% endmacro %}
+
+
+{% macro macro_work_img_gallery(workSlug, type = "") %}
+  {% set imgFiles = ("src/assets/img/work/screenshots/" + workSlug) | readDir %}
+
+  {% if imgFiles.length > 0 %}
+    <div class="tob-grid tob-grid-{{imgFiles.length}}{{(" tob-grid-" + imgFiles.length + "-" + type) if type else ""}}">
+
+    {% for img in imgFiles %}
+      <img src="{{ img }}" />
+    {% endfor %}
+    
+    </div>
+  {% endif %}
+{% endmacro %}
