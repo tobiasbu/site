@@ -94,6 +94,10 @@ ul {
   list-style: square;
 }
 
+li {
+  margin: var(--tob-space-8) 0;
+}
+
 /* LINKS  */
 
 a, button {
