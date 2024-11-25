@@ -91,12 +91,21 @@ blockquote {
 /* LIST */
 
 ul {
-  list-style: square;
+  list-style-type: square;
+  list-style-position: inside;
+  margin: var(--tob-space-24) 0;
+  padding: 0 0 0 var(--tob-space-16);
 }
 
 li {
   margin: var(--tob-space-8) 0;
 }
+
+/* ul li::marker {
+  line-height: 1.5;
+  content: "■   ";
+  font-size: 0.7em;
+} */
 
 /* LINKS  */
 

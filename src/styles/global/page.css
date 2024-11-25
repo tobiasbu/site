@@ -21,6 +21,7 @@ ul.tob-tags {
 
 .tob-tags li {
   display: inline-block;
+  margin: 0;
 }
 
 .tob-tags li:not(:last-child)::after {
