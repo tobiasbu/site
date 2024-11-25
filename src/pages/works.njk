@@ -49,8 +49,14 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
   {% endif %} #}
 
   {% if item.about %}
-    {% if item.imgGallery and item.imgGallery.enabled == true %}
-      {{ macro_work_img_gallery(slug, item.imgGallery.type) }}
+    {% if item.featuredMedia and item.featuredMedia.enabled == true %}
+      {% if item.featuredMedia.youtube %}
+        <div class="tob-embedded-video">
+        {{ item.featuredMedia.youtube | safe }}
+        </div>
+      {% else %}
+        {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
+      {% endif %}
     {% endif %}
 
     <h2>About</h2>

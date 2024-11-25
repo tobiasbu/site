@@ -19,12 +19,13 @@ awards:
 
 excerpt: Retro side-scroller a la Metroid-esque.
 
-imgGallery: 
+featuredMedia: 
   enabled: true
   type: feat1x2
 
 links:
   RMteka - article about Inside written by polish RPG Maker community: https://www.rmteka.pl/inside-2/
+  GameBlast - article about of RPG Maker citing Inside by Gabriel Toshi: https://www.gameblast.com.br/2013/02/rpg-maker-o-criador-de-jogos-que-fez.html
   Gameplay video by Kevin OfNine: https://www.youtube.com/watch?v=FI8NYg3EZxw
 
 about: |-2
@@ -33,8 +34,8 @@ about: |-2
   It was made for the contest "The demon inside us" (in brazilian, "O Demônio dentro de nós") 
   promoted by _Mundo RPG Maker_ (extinct brazilian RPG Maker forum).
 
-  {% figure "work/others/inside-oddn-winner-banner.png","Winner banner of the 'The demon inside us' contest" %}
-  
+  {% figure "work/others/inside-oddn-winner-banner.png","Winner banner of the contest 'The demon inside us'." %}
+
   It's present a retro design with a monochromatic color pallet (actually, less than 8 colors).
   The game mechanics mixes Mega-man and Metroid genres. The game is very short and was done in two weeks. 
 
