@@ -12,10 +12,8 @@ export default function figureShortcode(img, caption = "") {
       imgPath = `/assets/img/${img}`
   }
 
-  return `
-    <figure>
+  return `<figure>
       <img src="${imgPath}" ${caption ? `alt=\"${caption}\"` : ""} />
       ${caption ? `<figcaption>${caption}</figcaption>` : ""}
-    </figure>
-  `
+    </figure>`
 };
