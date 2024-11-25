@@ -13,4 +13,40 @@ featuredImg: koko.png
 style:
   position: 75% 0
 
-excerpt: "An game about a fish tribe that through rhythm must challenge the deep and polluted seas of Brazil."
+featuredMedia:
+  enabled: true
+  type: feat1x2
+
+excerpt: "An game about a fish shoal that through rhythm must challenge the deep and polluted seas of Brazil."
+
+about: |-2
+  Dive into an epic underwater adventure where the rhythm of the deep guides your every move! 🌊
+
+  Koko-Kuba is a rhythmic game developed by me at university for the "Engine Project" class. 
+  I invested a lot of time developing it and I also acquired business partners that contributed with the game somehow.
+  With this reason, I decided to move the game development to a commercial approach and I hopefully to release it 
+  someday.
+  
+story: |-2
+
+  In the mystical depths of rivers and oceans, Abaçaí, a once-noble deep-sea merman, declares war on the Koko-Kubas. 
+  He believes that this vibrant shoal of fish is to blame for the ocean's pollution. 
+  However, the true culprits lie above the waves — humans.
+
+  The Koko-Kubas, led by the wise and ancient fish Kaluanã, son of Piruju, have long protected the oceans.
+  With the beat of tambourines, the shake of rattles, the echo of the Sacred Whistle, 
+  and the calming tone of the Vigilant Peace Pipe, they prepare for the ultimate showdown to defend their home.
+  
+  Kaluanã rallies his troops with a powerful declaration:
+
+  _"For the defense of the river, the sea, for our scales and for the future fry. 
+  fish of all colors, sizes, and weights, unite! For fish that are united will never float."_
+
+  ## Gameplay Features:
+
+  - **Rhythm-based combat**: Engage in battles where every move and attack is tied to the beat. Match the rhythms to perform powerful combos and special abilities.
+  - **Dynamic underwater environments**: Explore beautifully animated underwater worlds, teeming with life and vibrant colors.
+  - **Epic boss battles**: Face off against Abaçaí and his legion of mermen in challenging encounters that test your sense of rhythm and timing.
+  - **Cultural richness**: Immerse yourself in a story inspired by deep-sea folklore, where music and rhythm are key to survival and victory.
+
+  Get ready to tap to the beat, protect the seas, and uncover the true enemies threatening the ocean's harmony! 🎶🐟

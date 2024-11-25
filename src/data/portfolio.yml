@@ -3,16 +3,16 @@ favorites:
   grid: 3
   items:
     - tennis-clash
-    - home-lift-builder
+    - koko-kuba
     - laserball
 
 highlights:
   grid: 4
   items:
+    - home-lift-builder
     - magnetis-app
-    - package-man
-    - koko-kuba
     - cida-e-adao
+    - package-man
 
 others:
   grid: 5
