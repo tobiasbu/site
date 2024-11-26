@@ -20,15 +20,12 @@
 
 
 {% macro macro_work_img_gallery(workSlug, type = "") %}
-  {% set imgFiles = ("src/assets/img/work/screenshots/" + workSlug) | readDir("screen") %}
-
-  {% if imgFiles.length > 0 %}
-    <div class="tob-grid tob-grid-{{imgFiles.length}}{{(" tob-grid-" + imgFiles.length + "-" + type) if type else ""}}">
-
-    {% for img in imgFiles %}
-      <img src="{{ img }}" />
-    {% endfor %}
-    
-    </div>
-  {% endif %}
+{% set imgFiles = ("src/assets/img/work/screenshots/" + workSlug) | readDir("screen") %}
+{% if imgFiles.length > 0 %}
+<div class="tob-grid {{ ("tob-grid-" + type) if type else ("tob-grid-" + imgFiles.length)}}">
+  {% for img in imgFiles %}
+  <img src="{{ img }}" />
+  {% endfor %}
+</div>
+{% endif %}
 {% endmacro %}

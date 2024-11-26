@@ -12,3 +12,62 @@ style:
   pixelated: true
 
 excerpt: Diablo fan-game created with RPG Maker 2000 (cancelled).
+
+featuredMedia:
+  enabled: true
+  embedVideo: https://www.youtube.com/watch?v=uPAZpw5VGas 
+
+about: |-2
+  {% from "macros/work.njk" import macro_work_img_gallery with context %}
+
+  Diablo is a dark fantasy role-playing game developed by _Blizzard Entertainment_. 
+  This project was a fan-game created in [RPG Maker 2000](https://store.steampowered.com/app/383730/RPG_Maker_2000/)
+  with the integration of the Destiny Patch 2.0 developed by Bananen-Joe.
+  Unfortunately, the game production was cancelled.
+
+  From this project, I learned a lot about logic, programming and pixel art. 
+  It was also where I mastered the RPG Maker 2000 engine, despite its significant limitations. 
+  The main issue that halted my progress was the complexity of creating the inventory system,
+  which I had to redo many times. Despite that, the project received a lot of positive feedback
+  from the RPG Maker communities.
+  
+  I still feel compelled to work in a similar project. However, I would approach it with
+  my own ideas this time: a new entirely game, not limited to just being a fan game 
+  but rather an original creation of my own.
+  
+  {{ macro_work_img_gallery("diablo-rpg-maker", 2) }}
+
+  ## Features
+
+  * Point-and-click action-RPG in RPG Maker!
+  * Custom menus panels like Diablo: Character Attributes, Inventory (with grid), Quests, Skills.
+  * Dialog system like the Diablo III.
+  * HUD with orbs animation like Diablo III and shortcuts for items and skills.
+  * Battle based on Diablo II.
+  * Two languages, English and Brazilian Portuguese.
+
+
+
+story: |-2
+  The following text is not canon to the original game but is my own creation
+  inspired by the texts provided by Blizzard:
+
+  ### The Rise of the Three
+
+  Before the rise of the Western empires, the world of men was terrorized bythe malevolent entities
+  known as **The Three Evils**. These eternal beings, banished from hell, roamed the earth, 
+  feeding on human desires and sowing chaos and conflict. They pitted father against son and 
+  plunged great nations into brutal, senseless wars. Their insatiable hunger for suffering and 
+  domination led them to ravage the lands of the Far East for countless centuries.
+
+  But hope was not lost. The enigmatic **archangel Tyrael** secretly gathered a group of mortal
+  wizards to combat this evil. This secret order, known as the **Horadrim**, was comprised of 
+  wizards from various clans across the East. Despite their diverse origins, 
+  hey shared a common purpose—to hunt down The Three Evils and end their reign of terror.
+
+  Under the guidance of Tyrael, the Horadrim embarked on a perilous journey, 
+  drawing strength from their diverse allies and unique skills. While the exact number and 
+  identities of these brave wizards remain shrouded in mystery, it was their collective efforts
+  — and the players dedication — that ultimately led to the success of their quest.
+
+  

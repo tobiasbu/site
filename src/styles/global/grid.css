@@ -33,11 +33,11 @@
 
 /* GRID 1 X 2 - */
 
-.tob-grid-3-feat1x2 > *:first-child {
+.tob-grid-feat1x2 > *:first-child {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
 }
-.tob-grid-3-feat1x2 > *:nth-child(2) {
+.tob-grid-feat1x2 > *:nth-child(2) {
   grid-row: 1;
   grid-column: 3;
 } 
