@@ -92,7 +92,7 @@ blockquote {
 
 ul {
   list-style-type: square;
-  list-style-position: inside;
+  list-style-position: outside;
   margin: var(--tob-space-24) 0;
   padding: 0 0 0 var(--tob-space-16);
 }
