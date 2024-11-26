@@ -17,19 +17,15 @@ about: |-2
   [Tennis Clash](https://wildlifestudios.com/games/tennis-clash) is an mobile game developed 
   by [Wildlife Studios](https://wildlifestudios.com/). In this project, I played a crucial role 
   in the successful launch of Tennis Clash in China by adapting the metagame and other parts
-   of the game to meet Chinese publishing requirements.
+  of the game to meet Chinese publishing requirements.
 
   As a Fullstack Engineer, I was deeply involved in:
 
   - Developing user interfaces: Ensuring that the game was visually engaging and user-friendly.
-  - Implementing game changes: Making necessary adjustments to enhance the gameplay experience.
   - Integrating the business partner SDK: Seamlessly integrating the SDK from native code and exposing it in Unity.
-
-  This integration demanded significant changes to the game backend, including:
-
-    - User Recovery Flow: Implementing a robust system to recover user data.
-    - Payment System: Ensuring secure and efficient in-game transactions.
-    - Analytics: to improve UA flows.
+  - User Recovery Flow: Implementing the business partner login provider to recover user data from China.
+  - Payment System: Ensuring secure and efficient in-game transactions.
+  - Analytics: Improve UA flows for specific audiences.
 
   ### Tech stack
 
