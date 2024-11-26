@@ -12,7 +12,7 @@ excerpt: "Laserball is a two-player digital gaming table for pubs."
 
 featuredMedia:
   enabled: true
-  youtube: <iframe width="560" height="315" src="https://www.youtube.com/embed/PsBKjEJmge8?si=y-f49QAbVEm8RVco" title="YouTube video player" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  embedVideo: https://www.youtube.com/embed/PsBKjEJmge8
 
 about: |-2
   Laserball is an electrifying digital game crafted for friends by the innovative minds at [Ideia à Vista](http://ideiaavista.com.br/) company. 

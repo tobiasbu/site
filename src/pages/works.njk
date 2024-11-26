@@ -50,10 +50,8 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
 
   {% if item.about %}
     {% if item.featuredMedia and item.featuredMedia.enabled == true %}
-      {% if item.featuredMedia.youtube %}
-        <div class="tob-embedded-video">
-        {{ item.featuredMedia.youtube | safe }}
-        </div>
+      {% if item.featuredMedia.embedVideo %}
+        {% embeddedvideo item.featuredMedia.embedVideo %}
       {% else %}
         {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
       {% endif %}

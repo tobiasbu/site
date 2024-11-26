@@ -47,13 +47,11 @@ ul.tob-tags {
 
 .tob-embedded-video {
   position: relative;
+  overflow: hidden;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56.25%; 
 }
 
-.tob-nowidevideo {
-  padding-bottom: 75%;
-}
 
 .tob-embedded-video > iframe,
 .tob-embedded-video > object,
