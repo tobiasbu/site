@@ -10,3 +10,49 @@ style:
   position: 0%
 
 excerpt: "A food awareness game for young people."
+
+featuredMedia:
+  enabled: true
+  embedVideo: https://www.youtube.com/watch?v=LrnhfBtCEYQ
+
+links:
+  Cida & Adão in GameJolt: https://gamejolt.com/games/cida-adao/30040
+  Post about Cida & Adão from ObservaSinos: https://www.ihu.unisinos.br/observasinos/fique-sabendo-2/cida-e-adao-festival-de-jogos-sbgames-2014
+  Paper about Cida & Adão submitted in SBGames 2014 (Brazilian Symposium on Games and Digital Entertainment): https://www.sbgames.org/sbgames2014/papers/culture/short/Cult_Short_Cida%20&%20Adao.pdf
+  Interview with the development team by the university TV station: https://www.youtube.com/watch?v=xWLcqj94EOA
+
+about: |-2
+
+  {% from "macros/work.njk" import macro_work_img_gallery with context %}
+
+  {% note "warning","Important Note","We acknowledge that this game contains elements of fatphobia.
+  We regret any harm this may cause and recognize that it could have been developed differently. 
+  Although the team no longer exists to address feedback, we appreciate your understanding.
+  Despite this issue, the Cida & Adão game was an important project for my self-development
+  and career." %}
+
+  **Cida & Adão** was a game designed when I worked as intern at [ObservaSinos](https://www.ihu.unisinos.br/observasinos).
+  The game included students from the Nutrition, Game Development and 
+  Social Work academic courses.
+  The goal of the game was to raise awareness about health and
+  nutrition among young people. 
+  
+  In this exciting adventure, you'll need to
+  master the art of appetite control, eating only when necessary and
+  avoiding the pitfalls of overindulgence.  You'll face the challenge of steering 
+  clear of gluttonous pigs determined to derail your progress. 
+  Engage with different puzzles and take up the rewarding task of growing your own food. 
+  
+  To beat the game you'll need to face the formidable capitalist pig who
+  stands in your way and emerge conscious citizen.
+
+  ## Features:
+
+  * Appetite Control: Learn the balance of eating just enough and steering clear of junk food.
+  * Avoid the Gluttons: Outsmart the gluttonous pigs that aim to ruin your game.
+  * Final battle: Confront and defeat the terrible capitalist pig to complete your quest.
+
+  Invite your friends, embrace the challenge, and embark on this educational and
+  entertaining journey with Cida & Adão!
+
+  {{ macro_work_img_gallery("cida-e-adao", 2) }}

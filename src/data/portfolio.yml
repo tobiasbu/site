@@ -10,8 +10,8 @@ highlights:
   grid: 4
   items:
     - home-lift-builder
+    - inside
     - magnetis-app
-    - cida-e-adao
     - package-man
 
 others:
@@ -22,13 +22,13 @@ others:
     - planet-of-clowns
     - microwave-survival
     - raytracer
-    - rhythmos-engine
     - untitled-space
+    - rhythmos-engine
     - vr-soccer
     - marduino
     - autorama-ar
     - obj-loader
+    - cida-e-adao
     - robot-kombat
     - legend-of-zilda
-    - inside
     - diablo-rpg-maker

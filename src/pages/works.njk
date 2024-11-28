@@ -35,13 +35,7 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
       {{ macro_work_date(item.date) }}
     </p>
   </header>
-
-  {% if item.excerpt %}
-    <p class="tob-excerpt">
-      {% markdown item.excerpt %}
-    </p>
-  {% endif %}
-{# 
+  {# 
   {% if item.awards %}
     <ul class="tob-awards">
       {{ item.awards | map(macro_award) | safe }}
@@ -50,14 +44,15 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
 
   {% if item.about %}
     {% if item.featuredMedia and item.featuredMedia.enabled == true %}
-      {% if item.featuredMedia.embedVideo %}
-        {% embeddedvideo item.featuredMedia.embedVideo %}
-      {% else %}
-        {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
-      {% endif %}
+      <div class="tob-featured-media">
+        {% if item.featuredMedia.embedVideo %}
+          {% embeddedvideo item.featuredMedia.embedVideo %}
+        {% else %}
+          {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
+        {% endif %}
+      </div>
     {% endif %}
 
-    <h2>About</h2>
     {{ item.about | renderContent("njk,md") | safe }}
 
     {% if item.story %}

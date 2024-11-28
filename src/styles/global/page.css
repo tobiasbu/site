@@ -43,6 +43,10 @@ ul.tob-tags {
   font-style: italic;
 }
 
+.tob-featured-media {
+  margin: var(--tob-space-32) 0;
+}
+
 /* EMBEDDED VIDEO */
 
 .tob-embedded-video {
