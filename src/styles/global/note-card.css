@@ -1,0 +1,55 @@
+
+/* NOTE CARDS */
+
+.tob-note-card {
+  display: block;
+  background-color: var(--tob-theme-bg);
+  border-left: 4px solid var(--tob-color-red);
+  margin: var(--tob-space-24) 0;
+  padding: var(--tob-space-24) var(--tob-space-24) var(--tob-space-24) var(--tob-space-16);
+  position: relative;
+  box-shadow: 2px 2px var(--tob-theme-link-bg-shadow);
+}
+
+@media (--tob-media-phone) {
+  .tob-note-card {
+    margin: var(--tob-space-24) -16px;
+  }
+}
+
+.tob-note-card-title {
+  display: flex;
+  gap: var(--tob-space-16);
+}
+
+.tob-note-card-title h3 {
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: var(--tob-space-8);
+}
+
+.tob-note-card-icon {
+  padding: 4px;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  color: var(--tob-theme-link-text);
+}
+
+.tob-note-card-message {
+  margin-left: 52px;
+}
+
+@media (--tob-media-phone) {
+  .tob-note-card-message {
+    margin-left: 0;
+  }  
+}
+
+.tob-note-card-message *:first-child {
+  margin-top: 0;
+}
+
+.tob-note-card-message *:last-child {
+  margin-bottom: 0;
+}
