@@ -1,0 +1,19 @@
+
+{% macro figure(imgPath, caption = "") %}
+<figure>
+  <img src="/assets/img/{{imgPath}}" {% if caption %}alt="{{caption}}"{% endif %} />
+  {% if caption %}<figcaption>{{caption}}</figcaption>{% endif %}
+</figure>
+{% endmacro %}
+
+{% macro work_img_gallery(workSlug, type = "") %}
+{% set imgFiles = ("src/assets/img/work/screenshots/" + workSlug) | readDir("screen") %}
+{% if imgFiles.length > 0 %}
+<div class="tob-grid {{ ("tob-grid-" + type) if type else ("tob-grid-" + imgFiles.length)}}">
+  {% for img in imgFiles %}
+  <img src="{{ img }}" />
+  {% endfor %}
+</div>
+{% endif %}
+{% endmacro %}
+

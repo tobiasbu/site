@@ -16,10 +16,6 @@ const INPUT_DIR = "src";
  * @returns {object}
  */
 export default async function(eleventyConfig) {
-  // watch folders
-  eleventyConfig.addWatchTarget(`${INPUT_DIR}/styles/**/*.{css}`); 
-  eleventyConfig.addWatchTarget(`${INPUT_DIR}/assets/**/*.{js,svg,png,jpeg}`);
-
   // add yaml support for data files
   eleventyConfig.addDataExtension('yml,yaml', (contents, filePath) => {
     const parsedYaml = yaml.load(contents);
@@ -29,6 +25,15 @@ export default async function(eleventyConfig) {
     return parsedYaml;
   });
 
+  // inject macros globally to markdowns files
+  eleventyConfig.addPreprocessor("macro-inject", ".md", (data, content) => {
+    return `{%- import "macros/content.njk" as macros with context -%}\n` + content;
+  });
+
+  // watch folders
+  eleventyConfig.addWatchTarget(`${INPUT_DIR}/styles/**/*.{css}`); 
+  eleventyConfig.addWatchTarget(`${INPUT_DIR}/assets/**/*.{js,svg,png,jpeg}`);
+  
   // set library for markdown
   eleventyConfig.setLibrary("md", markdownParser);
 
