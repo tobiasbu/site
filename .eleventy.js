@@ -41,7 +41,10 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.cssConfig);
-  eleventyConfig.addPlugin(plugins.jsConfig);
+
+  // // TEMPORARILY DISABLE JS CONFIG
+  // // See: https://github.com/11ty/eleventy/issues/3472
+  // eleventyConfig.addPlugin(plugins.jsConfig);
 
   // add shortcodes
   eleventyConfig.addShortcode('svg', shortcodes.svg);
