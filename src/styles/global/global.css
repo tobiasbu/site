@@ -160,6 +160,10 @@ figcaption {
   color: var(--tob-theme-caption);
 }
 
+img {
+  image-rendering: auto;
+}
+
 img, video {
   max-width: 100%;
 }

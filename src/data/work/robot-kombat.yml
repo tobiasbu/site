@@ -7,3 +7,24 @@ tags:
 featuredImg: robotkombat.jpg
 
 excerpt: "Small strategy game where you need to win the robot gladiators tournament."
+
+featuredMedia:
+  enabled: true
+
+about: |-2
+  Developed during the Programming II class, RobotKombat is a very simple strategic inspired by
+  the iconic games like Front Mission and Fire Emblem. 
+  
+  In RobotKombat, you step into the shoes of a robot engineer who is thrust into the high-stakes world
+  of robot gladiator tournaments. This grand tournament assembles the best fighters 
+  from around the globe, each vying for the coveted grand prize. 
+  The reigning champion, _Dietrich-Electrus-Maledictus_, has held the throne unbeaten for over seven years. 
+  Your mission is to defeat all challengers and claim the throne of victory!
+
+  ## Features:
+    - Robot Gladiators: Engage in thrilling battles with unique robot fighters, each with their own strengths and weaknesses.
+    - Challenging Boss: Face off against the formidable Dietrich-Electrus-Maledictus in a climactic battle.
+
+  ## Technical Details:
+    - Graphics and Music: Special thanks to SquareEnix for the stunning visuals and immersive soundtrack that bring the game to life.
+    - Development Tools: Created using C++ and SFML 2.1, showcasing robust programming and design skills.

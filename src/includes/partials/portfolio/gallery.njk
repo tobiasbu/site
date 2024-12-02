@@ -29,7 +29,7 @@
         {% endif %}
 
         {% if workItem.style.pixelated %}
-          {% set style = style + "image-rendering: pixelated;" %}
+          {% set style = style + "image-rendering: crisp-edges;" %}
         {% endif %}
 
         <img src="{{ workImg }}" 
