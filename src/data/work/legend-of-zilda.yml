@@ -4,8 +4,24 @@ tags:
   - C++
   - Student
 
+featuredMedia:
+  enabled: true
+
 featuredImg: zilda.png
 style:
   pixelated: true
 
 excerpt: "Parody game based in _The Legend of Zelda: Link's Awakening_."
+
+about: |-2
+  The Legend of Zilda is a parody of the classic game The Legend of Zelda: Link's Awakening.
+  Developed as part of a Programming II class focusing on Algorithms and Data Structures, 
+  this project was designed to demonstrate a comprehensive understanding of the learned material.
+
+  Despite its simplicity, the game offers a compact and entertaining experience, lasting under 15 minutes. 
+  Players embark on a quest to collect three shells, navigating through a world reminiscent of the classic Zelda games.
+
+  ## Features
+  - Quick Gameplay: Enjoy a concise, under-15-minute adventure perfect for a quick gaming session.
+  - Classic Zelda Vibe: Immerse yourself in a familiar yet fresh Zelda-inspired environment.
+  - Engaging Mechanics: Use strategic gameplay to avoid pitfalls and outsmart obstacles.

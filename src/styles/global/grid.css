@@ -23,13 +23,14 @@
   height: 100%;
 }
 
-.tob-grid-2 {
+.tob-grid-2, .tob-grid-4 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .tob-grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+
 
 /* GRID 1 X 2 - */
 
