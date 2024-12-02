@@ -1,9 +1,23 @@
 name: OBJ Loader
-date: 2014
+date: 2014-2015
 tags:
   - C++
   - Student
 
 featuredImg: objloader.jpg
 
+featuredMedia:
+  enabled: true
+
 excerpt: "A simple .obj file loader"
+
+about: |-2
+  Created during a Computer Graphics class, this app is designed to
+  read 3D models in the Wavefront OBJ format. 
+  Developed specifically for Windows, it utilizes C++, OpenGL, and Glut to deliver a robust experience.
+
+  ## Key Features:
+  - Read .obj files: Import and visualize 3D models effortlessly.
+  - Camera Manipulation: Navigate and explore models from different angles.
+  - Windows Dialog: User-friendly interface for easy interaction.
+  - Object Selection and Removal: Select and remove parts of the 3D model as needed.
