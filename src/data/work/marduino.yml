@@ -7,3 +7,17 @@ tags:
 featuredImg: marduino.jpg
 
 excerpt: "An experimental platform game developed with Arduino Uno."
+
+featuredMedia:
+  enabled: true
+  embedVideo: https://www.youtube.com/embed/y5DeofZac5w
+
+about: |-2
+
+  [Super Marduino](https://github.com/tobiasbu/marduino) is a platform game developed using the Arduino Uno, 
+  featuring components such as the Nokia 5110 display and three buttons.
+  This simple game uses the classic Super Mario Land graphics for GameBoy, 
+  bringing a nostalgic gaming experience to a DIY electronics project.
+
+  I would like to extend my heartfelt thanks to my friend, 
+  Reginaldo da Silva, who taught me a bit about electronics and generously lent me his Arduino Uno.
