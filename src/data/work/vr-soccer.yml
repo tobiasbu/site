@@ -8,3 +8,17 @@ tags:
 featuredImg: vrsoccer.jpg
 
 excerpt: "A computer vision's soccer game for two players."
+
+featuredMedia:
+  enabled: true
+  embedVideo: "https://www.youtube.com/watch?v=9jnzYDv46zk"
+
+about: |-2
+
+  VRSoccer is an virtual football game developed with Unity3D and OpenCV.
+
+  The game operates using a camera and projector mounted on top of a structure, 
+  capturing images and processing them so that players can interact without the need for any devices.
+  This seamless interaction creates an immersive and enjoyable experience for all players.
+
+  {% figure "work/others/vrsoccer_structure.png" %}
