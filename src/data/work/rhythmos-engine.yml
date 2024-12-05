@@ -7,3 +7,22 @@ tags:
 featuredImg: rhythmos.png
 
 excerpt: "Rhythm creation tool for Unity."
+
+links:
+  Repository: https://github.com/tobiasbu/rhythmos
+  Unity Asset Store page: https://assetstore.unity.com/packages/tools/audio/rhythmos-engine-39835
+
+about: |-2
+
+  [Rhythmos Engine](https://github.com/tobiasbu/rhythmos) is an tool for Unity 3D
+  to create rhythms for musical games or apps, based on musical notation.
+  From greek, _rhythmos_ means "any regular recurring motion, symmetry". 
+  This tool was made during the development of [Koko-Kuba](/work/koko-kuba.html) which helped to solve
+  an important implementation of the game mechanic.
+
+  ## Features:
+
+  - RhythmEditor: An easy-to-use tool for creating your own rhythms.
+  - Storage Class: Load and save your rhythms effortlessly.
+  - Real-Time Rhythm Creation and Playback: Play and create rhythms during runtime.
+  - Utility Functions and Classes: Includes features for checking rhythm precision, comparing rhythms, and playing rhythms.

@@ -3,7 +3,6 @@
 .tob-grid {
   display: grid;
   gap: var(--tob-space-32);
-  margin: var(--tob-space-32) 0;
 }
 
 @media (--tob-media-tablet) {
@@ -19,7 +18,6 @@
 }
 
 .tob-grid > * {
-  object-fit: cover;
   height: 100%;
 }
 
@@ -31,6 +29,9 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.tob-grid-8 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
 /* GRID 1 X 2 - */
 

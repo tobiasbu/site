@@ -51,6 +51,14 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
           {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
         {% endif %}
       </div>
+    {% else %}
+      {% set workImg = "/assets/img/work/thumbnails/" + item.featuredImg %}
+       <div class="tob-featured-media">
+          <img src="{{ workImg }}" 
+              aria-label="{{ workItem.title }}" 
+              alt="{{ workItem.title }}" 
+          />
+      </div>
     {% endif %}
 
     {{ item.about | renderContent("njk,md") | safe }}

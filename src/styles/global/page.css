@@ -43,8 +43,15 @@ ul.tob-tags {
   font-style: italic;
 }
 
+/* FEATURED MEDIA */  
+
 .tob-featured-media {
   margin: var(--tob-space-32) 0;
+  display: flex;
+}
+
+.tob-featured-media > * {
+  margin: auto;
 }
 
 /* EMBEDDED VIDEO */
@@ -55,7 +62,6 @@ ul.tob-tags {
   width: 100%;
   padding-top: 56.25%; 
 }
-
 
 .tob-embedded-video > iframe,
 .tob-embedded-video > object,
