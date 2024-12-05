@@ -101,6 +101,10 @@ li {
   margin: var(--tob-space-8) 0;
 }
 
+li ul {
+  margin: var(--tob-space-8) 0;
+}
+
 /* ul li::marker {
   line-height: 1.5;
   content: "■   ";

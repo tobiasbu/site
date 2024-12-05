@@ -7,3 +7,152 @@ tags:
 featuredImg: raytracer.png
 
 excerpt: "Another graphics programming student ray tracer. Created before it was cool."
+
+featuredMedia:
+  enabled: true
+
+about: |-2
+
+  The Raytracer was developed for the Advanced Computer Graphics Techniques class in college. 
+  This project involves creating a complete system of algorithms to render three-dimensional
+  images using the **backward raytracing technique**.
+
+  The raytracer simulates **light paths** as they occur in the real world, rendering effects based
+  on the characteristics of objects. It can generate a high degree of realism,
+  but at a significant computational cost.
+
+  ## Features
+
+  The complete list of features of the Raytracer project:
+
+  - Rendered scene preview and editing tools
+    - Apply kernel convolution filters
+    - Color tools
+    - Scene normal map, depth map, and edge detection preview
+  - Scene file loader
+  - Basic raytracer architecture (Whitted-style)
+    - Fresnel: Reflection and refraction
+    - Point and directional light
+    - Phong, cel-shading, Gooch, and two-tone shading
+    - Hard shadows, soft shadows (area light sampling), and fake soft shadows
+    - Anti-aliasing (jittering method)
+  - Primitives
+    - Plane
+    - Sphere
+    - Triangle
+    - Mesh
+    - Wavefront *.OBJ files
+  - Supports transforms
+  - Bounding volume hierarchy (BVH) - based on pbrt-v3
+    - Surface area heuristics (SAH)
+    - Can contain any primitives
+  - Texture mapping
+    - Available for sphere, triangle, and plane UVs
+    - Normal mapping
+    -  Bilinear and point filtering
+    - Cube maps
+  - Filters (kernel convolution)
+    - Laplacian, sharpen, unsharp mask, box blur, motion blur, smooth blur, Gaussian blur, and emboss
+  - Silhouette detection using Sobel filter
+    - Scene normal map and depth map
+    - Detects only external or full edges
+  - Image tools
+    - Posterize, brightness and contrast adjustment, grayscale, thresholding, and color inversion
+  - Multi-threaded raytracing
+    - Screen space division or each line handled by a separate thread
+
+  ## Workflow
+
+  1. Rays are traced from the observer to each pixel on a virtual screen.
+  2. Each ray must test for intersections with scene objects.
+  3. Upon intersecting with the nearest object, the color is calculated from light sources by
+  examining the object's material properties and combining (or shading) the information to produce the final pixel color.
+  4. Reflective, refractive, or translucent materials, and extensive shadow generation,
+  will require additional rays to be traced.
+
+  ## Acceleration Structures
+
+  Rendering a scene with thousands of primitives using the traditional raytracer algorithm is very slow and impractical.
+  To address this we can use acceleration structures!
+
+  There are many alternatives for these structures, but in this project, 
+  I chose to implement a **Bounding Volume Hierarchy (BVH)**.
+
+  BVH is a spatial partitioning binary tree formed from "bounding volumes." 
+  Each object has a bounding volume that defines its maximum boundaries. 
+  There are several variations and optimizations for real-time use.
+
+  ## Optimizing
+
+  To optimize the rendering routine of the raytracer, consider these points.
+  In this project, I added the following optimizations:
+
+  ### 1. BVH - Surface Area Heuristics
+
+  This is a BVH division method that seeks to minimize the time spent during ray intersections. 
+  While building the BVH, it estimates whether to create a leaf node or divide the node by checking the child nodes.
+
+  The cost of each node is proportional to the area of the bounding volume and the number of primitives contained
+  within the node. The optimal division minimizes the cost of each node, though this method increases the
+  construction time of the BVH. This same algorithm is used in kD-trees.
+
+  ### 2. Polygonal Mesh Subdivision
+
+  A specific BVH for meshes follows the same principle as the scene BVH, 
+  but creates a bounding volume for each polygon in a mesh.
+
+  {% figure 
+  "/work/screenshots/raytracer/raytracer_meshbvh.jpg",
+  "Polygonal Mesh Subdivision representation by [Thomas Diewald](https://github.com/diwi).",
+  "Polygonal Mesh Subdivision representation by Thomas Diewald.",
+  "max-width:512px;" %}
+
+  ### 3. Parallel Ray Tracing
+
+  To speed up the ray tracing process, the image buffer is subdivided among n threads. 
+  Each thread handles ray tracing for a portion of the buffer.
+
+  {% figure 
+  "/work/screenshots/raytracer/raytracer_parallalel.png",
+  "Multi-threaded ray-tracing.",
+  "",
+  "max-width:512px;" %}
+
+  ## Future Improvements
+
+  There are several issues and potential improvements for this project:
+
+  - Create a UI for scene management (using [imgui](https://github.com/ocornut/imgui) or a similar tool).
+    Editing scene elements in .TXT files is cumbersome.
+  - Implement a node graph editor for shader materials that integrates with the raytracer engine and OpenGL.
+  - Improve the parallel raytracing to achieve the expected speedup. This requires further research.
+  - Gain additional speed by implementing the render routines on hardware accelerators such as
+  [CUDA](https://developer.nvidia.com/cuda-zone) and [OpenCL](https://www.khronos.org/opencl/)
+  - Improve file loaders, such as the Wavefront *.OBJ loader, which can be slow in some cases. 
+  This requires optimization and handling of problematic meshes.
+  - Enhance error handling and include unit tests.
+
+  ## Code and References
+
+  Some Links and other user codes that helped me during development:
+
+  - [Scrathpixel 2.0](http://www.scratchapixel.com/)
+  - [Computer Graphics Guide](https://computergraphicsguide.blogspot.com.br/)
+  - [Bounding Volume Hierarchy](http://fileadmin.cs.lth.se/cs/Education/EDAN30/lectures/S2-bvh.pdf)
+  - [Glavin001 / Raytracer](https://github.com/Glavin001/Raytracer)
+  - [flipcode](http://www.flipcode.com/)
+  - [pbrt-v3](https://github.com/mmp/pbrt-v3)
+  - [raycer](https://github.com/mikoro/raycer)
+  - [Rossetacode / Image convolution](https://rosettacode.org/wiki/Image_convolution)
+  - [songho.ca](http://www.songho.ca/index.html)
+  - [Sun & Black Cat](http://sunandblackcat.com/index.php?l=eng)
+  - [tinyobjloader](https://github.com/syoyo/tinyobjloader)
+  - [EuclideanSpace](http://www.euclideanspace.com/)
+
+  Websites of data and resources sources: 
+
+  - [The Stanford 3D Scanning Repository](http://graphics.stanford.edu/data/3Dscanrep/)
+  - [OpenGameArt.org](https://opengameart.org/)
+  - [John Burkardt](http://people.sc.fsu.edu/~jburkardt/index.html)
+  - [Bump-map a sphere with a texture map](https://stackoverflow.com/questions/32550498/bump-map-a-sphere-with-a-texture-map)
+
