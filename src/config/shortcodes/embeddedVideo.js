@@ -1,9 +1,4 @@
 
-
-// <iframe width="1047" height="589" src="https://www.youtube.com/embed/PsBKjEJmge8" title="Laserball no Pub" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-// <iframe width="809" height="607" src="https://www.youtube.com/embed/uPAZpw5VGas" title="Diablo - RPG Maker - Alpha Test" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 const YOUTUBE_URL_REGEX = /^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube(?:-nocookie)?\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|live\/|v\/)?)([\w\-]+)(\S+)?$/gm;
 
 /**
