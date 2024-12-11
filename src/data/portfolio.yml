@@ -10,20 +10,20 @@ highlights:
   grid: 4
   items:
     - home-lift-builder
-    - inside
+    - rhythmos-engine
     - magnetis-app
-    - package-man
+    - inside
 
 others:
   grid: 5
   items:
+    - package-man
     - neo-bugreiro
     - sword-and-shield
     - planet-of-the-clowns
     - microwave-survival
     - raytracer
     - untitled-space
-    - rhythmos-engine
     - vr-soccer
     - marduino
     - autorama-ar

@@ -6,6 +6,10 @@
  * @returns {boolean}
  */
 export default function contains(value, needle = "") {
+  if (typeof value === "number") {
+    value = `${value}`;
+  }
+
   if (Array.isArray(needle)) {
     for (let i = 0; i < needle.length; i++) {
       const element = needle[i];
@@ -17,10 +21,7 @@ export default function contains(value, needle = "") {
     return false;
   }
 
-  if (typeof value === "number") {
-    value = `${value}`;
-  }
-
+  
 
   return value.includes(needle);
 }

@@ -1,15 +1,21 @@
 
 {% macro macro_work_date(workYear) %}
-  {% if workYear | contains("-") %}
+  {% if workYear | contains(["-", "and"]) %}
 
-    {% for yr in (workYear | split("-")) %}
+    {% set sep = "-" %}
+    {% if workYear | contains("and") %}
+      {% set sep = "and" %}
+    {% endif %}
+
+
+    {% for yr in (workYear | split(r/-|and/ig)) %}
       {% if yr | int %}
         <time datetime="{{ yr | trim }}">{{ yr | trim }}</time>
       {% else %}
         <span>{{ yr | trim }}</span>
       {% endif %}
       {% if not loop.last %}
-      -
+      {{ sep }}
       {% endif %}
     {% endfor %}
 
