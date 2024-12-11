@@ -7,3 +7,14 @@ tags:
 featuredImg: swordandshield.png
 
 excerpt: "Two wizard's apprentices need to revert a curse that turned them to a sword and a shield."
+
+featuredMedia:
+  enabled: true
+
+about: |-2
+
+  In a far-off kingdom, two apprentices need to battle together for rescue your master wizard 
+  and revert the spell that transferred them to a enchanted sword and shield! 
+  Ask your friend over to play this collaborative game!
+
+  This game was created in the [Global Game Jam 2018](https://v3.globalgamejam.org/2018/games/sword-and-shield).

@@ -1,0 +1,25 @@
+name: Planet of the Clowns
+date: 2017
+tags: 
+  - Board Game
+  - Jam
+
+featuredImg: clownsplanet.jpg
+style:
+  position: 75% 0
+
+excerpt: "In this board game, you and your friends must survive the onslaught of clown hordes."
+
+about: |-2
+
+  You and your friends are survivors of a spaceship crash in the **Planet of the Clowns**. 
+  Hordes of clowns are attacking the ship. Luckily, the Mimes (archenemies of the clown people) 
+  are next to the crash and will help you with equipment in exchange for clowns' heads. 
+  It's time to kick some ass!
+
+  {% figure 
+  "/work/others/clowns_board-game.jpg",
+  "The Planet of the Clowns board game concept."
+  %}
+
+  This board game was created in the [Global Game Jam 2017](https://v3.globalgamejam.org/2017/games/planet-clowns).

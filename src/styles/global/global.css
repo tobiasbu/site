@@ -164,6 +164,17 @@ figcaption {
   color: var(--tob-theme-caption);
 }
 
+figure img {
+  max-width: 640px;
+  width: auto;
+}
+
+@media (--tob-media-phone) {
+  figure img {
+    width: 100%;
+  }  
+}
+
 img {
   image-rendering: auto;
   width: 100%;

@@ -104,8 +104,8 @@ about: |-2
   {% figure 
   "/work/screenshots/raytracer/raytracer_meshbvh.jpg",
   "Polygonal Mesh Subdivision representation by [Thomas Diewald](https://github.com/diwi).",
-  "Polygonal Mesh Subdivision representation by Thomas Diewald.",
-  "max-width:512px;" %}
+  "Polygonal Mesh Subdivision representation by Thomas Diewald."
+  %}
 
   ### 3. Parallel Ray Tracing
 
@@ -114,9 +114,8 @@ about: |-2
 
   {% figure 
   "/work/screenshots/raytracer/raytracer_parallalel.png",
-  "Multi-threaded ray-tracing.",
-  "",
-  "max-width:512px;" %}
+  "Multi-threaded ray-tracing."
+  %}
 
   ## Future Improvements
 

@@ -7,3 +7,15 @@ tags:
 featuredImg: microwavesurvival.jpg
 
 excerpt: "You are inside of a microwave and you must survive."
+
+featuredMedia:
+  enabled: true
+  embedVideo: https://www.youtube.com/watch?v=Yk0xPwwjWhg
+
+about: |-2
+
+  "Microwave Survival" is a bullet hell survivor game, where the player is inside 
+  a microwave and must survive from the worst enemies ever: photon waves! Try yourself, if you get in trouble, 
+  find some food to help you stay a little longer.
+
+  This game was developed in the [Global Game Jam 2017](https://v3.globalgamejam.org/2017/games/microwave-survivor) with theme _wave_.

@@ -14,6 +14,10 @@
   text-align: left;
 }
 
+.tob-about-portrait img {
+  max-width: 100%;
+}
+
 @media (--tob-media-phone) {
   .tob-about {
     display: block;
