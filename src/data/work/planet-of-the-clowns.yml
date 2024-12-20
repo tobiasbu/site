@@ -10,6 +10,10 @@ style:
 
 excerpt: "In this board game, you and your friends must survive the onslaught of clown hordes."
 
+featuredMedia:
+  enabled: true
+  centered: true
+
 about: |-2
 
   You and your friends are survivors of a spaceship crash in the **Planet of the Clowns**. 
