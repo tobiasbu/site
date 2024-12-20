@@ -68,9 +68,10 @@ export default async function(eleventyConfig) {
   eleventyConfig.addBundle("jsPage");
 
   // copy assets
-  eleventyConfig.addPassthroughCopy('src/assets/img')
-  eleventyConfig.addPassthroughCopy('src/assets/video')
-  eleventyConfig.addPassthroughCopy('src/docs')
+  eleventyConfig.addPassthroughCopy({ "src/assets/favicon": "favicon" });
+  eleventyConfig.addPassthroughCopy('src/assets/img');
+  eleventyConfig.addPassthroughCopy('src/assets/video');
+  eleventyConfig.addPassthroughCopy('src/docs');
 
   return {
     dir: {
