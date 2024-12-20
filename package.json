@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/tobiasbu",
   "author": "Tobias Ulrich",
-  "license": "WTFPL",
+  "license": "AGPL-3.0-only",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "autoprefixer": "^10.4.20",
