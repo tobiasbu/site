@@ -1,7 +1,26 @@
-name: Package Man
+name: Package-Man
 date: 2019
 tags:
   - Unity
   - Personal
 
 featuredImg: packageman.gif
+
+about: |-2
+  
+  Package-Man is an arcade game developed using Unity and C#. 
+  The game is inspired by the classic arcade game Pac-Man and the primary 
+  goal is to collect dots through a maze, collect all the energizers,
+  and avoid the mail carriers.
+
+  This project aimed to reimplement Pac-Man mechanics based in the 
+  [The Pac-Man Dossier](https://pacman.holenet.info/) written by Jamey Pittman.
+
+  ## Features:
+
+  - **Classic Maze Navigation**: Navigate through a maze, collect 'packages dots' and avoid being caught by the mail carriers.
+  - **Mail Carrier AI**: The mail carrier AI is totally based in the original Pac-Man ghosts personalities.
+  - **Power-Ups**: Utilize power-ups to gain temporary super-power, such as increased speed or the ability to "eat" the mail carriers.
+  - **Levels**: There are 3 stages available
+  - **Art and Sound Effects**: Art created from scratch and sound effects from the original game.
+  - **High Score Tracking**: Compete with others to achieve the highest score and track your progress over time.

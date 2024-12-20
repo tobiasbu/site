@@ -52,8 +52,7 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
         {% elif item.featuredMedia.centered == true %}
             <img src="{{ workImg }}" 
                 aria-label="{{ item.title }}" 
-                alt="{{ item.excerpt }}" 
-                style="width: auto; max-width: 512px;"
+                alt="{{ item.excerpt }}"
             />
         {% else %}
           {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}

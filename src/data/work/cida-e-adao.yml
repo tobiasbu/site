@@ -46,6 +46,8 @@ about: |-2
   To beat the game you'll need to face the formidable capitalist pig who
   stands in your way and emerge conscious citizen.
 
+  {{ macro_work_img_gallery("cida-e-adao", 2) }}
+
   ## Features:
 
   * Appetite Control: Learn the balance of eating just enough and steering clear of junk food.
@@ -54,5 +56,3 @@ about: |-2
 
   Invite your friends, embrace the challenge, and embark on this educational and
   entertaining journey with Cida & Adão!
-
-  {{ macro_work_img_gallery("cida-e-adao", 2) }}

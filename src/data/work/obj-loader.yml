@@ -8,6 +8,7 @@ featuredImg: objloader.jpg
 
 featuredMedia:
   enabled: true
+  type: feat1x2
 
 excerpt: "A simple .obj file loader"
 

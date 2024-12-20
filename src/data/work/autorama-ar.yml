@@ -8,6 +8,7 @@ featuredImg: autoramaar.jpg
 
 featuredMedia:
   enabled: true
+  type: feat1x2
 
 excerpt: "Draw racing tracks on white paper, scan and play it."
 
@@ -18,8 +19,8 @@ about: |-2
   scan your drawing, and you'll be able to race on the course you've created!
 
   ## Features:
-  - Course Scanner: Utilize a webcam to scan and import your custom race courses.
-  - Interactive Gameplay: Play on the race course you designed!
+  - **Course Scanner**: Utilize a webcam to scan your course race draw and import it to the game.
+  - **Interactive Gameplay**: Play on the race course you designed!
 
   The project was built using C++, OpenCV, the SFML-Audio module, Glut, and OpenGL, 
   demonstrating a blend of various technologies for an immersive and engaging virtual reality experience.

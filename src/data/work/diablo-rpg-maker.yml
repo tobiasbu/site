@@ -20,6 +20,8 @@ featuredMedia:
 about: |-2
   {% from "macros/work.njk" import macro_work_img_gallery with context %}
 
+  {{ macro_work_img_gallery("diablo-rpg-maker", 2) }}
+
   Diablo is a dark fantasy role-playing game developed by _Blizzard Entertainment_. 
   This project was a fan-game created in [RPG Maker 2000](https://store.steampowered.com/app/383730/RPG_Maker_2000/)
   with the integration of the Destiny Patch 2.0 developed by Bananen-Joe.
@@ -34,8 +36,6 @@ about: |-2
   I still feel compelled to work in a similar project. However, I would approach it with
   my own ideas this time: a new entirely game, not limited to just being a fan game 
   but rather an original creation of my own.
-  
-  {{ macro_work_img_gallery("diablo-rpg-maker", 2) }}
 
   ## Features
 

@@ -53,6 +53,11 @@ ul.tob-tags {
   margin: auto;
 }
 
+.tob-featured-media > img {
+  width: 100%;
+  max-width: 512px;
+}
+
 /* EMBEDDED VIDEO */
 
 .tob-embedded-video {

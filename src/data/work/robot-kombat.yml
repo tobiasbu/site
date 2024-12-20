@@ -10,6 +10,7 @@ excerpt: "Small strategy game where you need to win the robot gladiators tournam
 
 featuredMedia:
   enabled: true
+  type: feat1x2
 
 about: |-2
   Developed during the Programming II class, RobotKombat is a very simple strategic inspired by
