@@ -64,7 +64,8 @@ export default async function(eleventyConfig) {
 
   // add bundles
   eleventyConfig.addBundle("css", {hoist: true});
-  eleventyConfig.addBundle("js");
+  eleventyConfig.addBundle("jsBundle");
+  eleventyConfig.addBundle("jsPage");
 
   // copy assets
   eleventyConfig.addPassthroughCopy('src/assets/img')

@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta property="robots" content="noai,noimageai">
 
-    {# 1 - inline js #}
+    {# 1 - metadata #}
+    {% include 'head/meta.njk' %}
+
+    {# 2 - inline js #}
     {% include 'head/js-inline.njk' %}
 
-    {% include 'head/meta.njk' %}
+    {# 3 - styles #}
     {% include 'head/styles.njk' %}
 
   </head>

@@ -1,14 +1,6 @@
+<title>
+{{ meta.title }}{% if title %} | {{ title }}{% elif item.name %} | {{ item.name }}{% endif %}
+</title>
 
-
-
-    <title>
-    {{ meta.title }} 
-    {% if title %}
-    | {{ title }}
-    {% elif item.name %}
-    | {{ item.name }}
-    {% endif %}
-    </title>
-
-    <meta name="author" content="{{ meta.author }}" >
-    <meta name="description" content="{{ meta.description }}">
+<meta name="author" content="{{ meta.author }}" >
+<meta name="description" content="{{ meta.description }}">

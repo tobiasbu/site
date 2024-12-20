@@ -1,7 +1,16 @@
 
-<script>{% getBundle "js", "inline" %}</script>
 
-{% js "inline" %}
+<script>{% getBundle "jsBundle", "jsBundle-inline" %}</script>
+
+{% jsBundle "jsBundle-inline" %}
 {% include "_js/mobile-menu.js" %}
 {% include "_js/theme-switcher.js" %}
-{% endjs %}
+{% endjsBundle %}
+
+
+{% if jsInline %}
+  <script>{% getBundle "jsPage", "jsPage-inline" %}</script>
+  {% jsPage "jsPage-inline" %}
+  {% include "_js/" + jsInline %}
+  {% endjsPage %}
+{% endif %}
