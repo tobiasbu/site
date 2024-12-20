@@ -1,0 +1,41 @@
+name: Scintilla
+date: 2016 and 2018
+tags:
+  - JavaScript
+  - Student
+
+excerpt: A small and open-source HTML5 game engine.
+
+featuredImg: scintilla.png
+
+featuredMedia:
+  enabled: true
+  centered: true
+  
+about: |-2
+  
+  [Scintilla](https://github.com/tobiasbu/scintilla) is a small and Open-Source HTML5 Game Engine canvas based. 
+  Inspired by [melonJS](http://melonjs.org/), [Phaser](https://phaser.io/) and [PixiJS](http://www.pixijs.com/) 
+  allows you to create fast games from small projects.
+
+  Scintilla was started in 2016 when I was learning HTML5 syntax in JavaScript. The initial version, tobiJS,
+  was written in pure ECMAScript 5. After two years, I refactored the entire engine using 
+  modern JavaScript (ECMAScript 6) to improve its architecture and design.
+
+  The engine is designed for the game development community, catering to both beginners and advanced developers. 
+  Scintilla provides a comprehensive system for creating prototypes, experimenting with ideas,
+  and developing art games, retro games, and more.
+
+  ## Current Features
+
+  - Sprite and spritesheet rendering.
+  - Loads tilemaps from Tiled JSON format.
+  - Manage complex animations easily.
+  - Pooling for game objects.
+  - Signals to listen to engine events.
+  - Supports multiple asset formats.
+  - Simple transition effects.
+  - Includes easing functions and object validation.
+  - Provides lists, maps, and sets.
+  - Handles keyboard and mouse input.
+

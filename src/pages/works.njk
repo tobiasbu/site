@@ -42,21 +42,28 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
     </ul>
   {% endif %} #}
 
+  {% set workImg = "/assets/img/work/thumbnails/" + item.featuredImg %}
+
   {% if item.about %}
     {% if item.featuredMedia and item.featuredMedia.enabled == true %}
       <div class="tob-featured-media">
         {% if item.featuredMedia.embedVideo %}
           {% embeddedvideo item.featuredMedia.embedVideo %}
+        {% elif item.featuredMedia.centered == true %}
+            <img src="{{ workImg }}" 
+                aria-label="{{ item.title }}" 
+                alt="{{ item.excerpt }}" 
+                style="width: auto; max-width: 512px;"
+            />
         {% else %}
           {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
         {% endif %}
       </div>
     {% else %}
-      {% set workImg = "/assets/img/work/thumbnails/" + item.featuredImg %}
        <div class="tob-featured-media">
           <img src="{{ workImg }}" 
-              aria-label="{{ workItem.title }}" 
-              alt="{{ workItem.title }}" 
+              aria-label="{{ item.title }}" 
+              alt="{{ item.excerpt }}" 
           />
       </div>
     {% endif %}

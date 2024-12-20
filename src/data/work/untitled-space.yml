@@ -7,3 +7,9 @@ tags:
 featuredImg: untitledspace.png
 
 excerpt: "Short shoot'em up game testing [Scintilla](https://github.com/tobiasbu/scintilla) capabilities"
+
+_about: |-2
+  
+  Untitled Space is a short shoot'em up developed to test the [Scintilla](https://github.com/tobiasbu/scintilla)
+  game engine's capabilities for web-based games. The main idea was to experiment with the basic concepts
+  of a game engine architecture. The main goal of the game was learning purposes. 
