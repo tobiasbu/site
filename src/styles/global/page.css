@@ -45,8 +45,8 @@ ul.tob-tags {
 /* FEATURED MEDIA */  
 
 .tob-featured-media {
-  margin: var(--tob-space-32) 0;
-  display: flex;
+  text-align: center;
+  margin: var(--tob-space-24) 0;
 }
 
 .tob-featured-media > * {
@@ -61,6 +61,7 @@ ul.tob-tags {
 /* EMBEDDED VIDEO */
 
 .tob-embedded-video {
+  background-color: var(--tob-theme-video);
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -69,6 +70,7 @@ ul.tob-tags {
 
 .tob-embedded-video > iframe,
 .tob-embedded-video > object,
+.tob-embedded-video > video,
 .tob-embedded-video > embed {
   position: absolute;
   top: 0;

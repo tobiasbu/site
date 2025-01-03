@@ -18,7 +18,7 @@
 
       {% if workItem.video %}
 
-        {% video workItem.video, workImg, workItem.style %}
+        {% video workItem.video, {poster: workImg, style: workItem.style, autoplay: true} %}
 
       {% else %}
 

@@ -72,6 +72,7 @@
   --tob-theme-caption: var(--tob-color-gray);
   --tob-theme-bg: var(--tob-color-white);
   --tob-theme-footer: var(--tob-color-beige-subtle);
+  --tob-theme-video: var(--tob-color-gray-subtle);
 }
 
 :root[data-theme='dark'] {
@@ -88,6 +89,7 @@
   --tob-theme-caption: var(--tob-color-gray-subtle);
   --tob-theme-bg: var(--tob-color-red-dark);
   --tob-theme-footer: var(--tob-color-red-dark);
+  --tob-theme-video: var(--tob-color-red-dark);
 }
 
 /* MEDIA QUERIES */

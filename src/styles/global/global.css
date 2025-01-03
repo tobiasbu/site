@@ -159,9 +159,14 @@ figure {
   text-align: center;
 }
 
-figcaption {
+figcaption, .tob-caption {
   font-size: var(--tob-font-size-small);
   color: var(--tob-theme-caption);
+}
+
+p.tob-caption {
+  line-height: 1.5;
+  margin: var(--tob-space-16) 0;
 }
 
 figure img {
