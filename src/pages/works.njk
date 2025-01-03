@@ -54,8 +54,15 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
                 aria-label="{{ item.title }}" 
                 alt="{{ item.excerpt }}"
             />
+        {% elif item.featuredMedia.video %}
+          {% video item.featuredMedia.video, { wide: true} | merge(item.featuredMedia.options) %}
         {% else %}
           {{ macro_work_img_gallery(slug, item.featuredMedia.type) }}
+        {% endif %}
+        {% if item.featuredMedia.description %}
+          <p class="tob-caption">
+          {% markdown item.featuredMedia.description %}
+          </p>
         {% endif %}
       </div>
     {% else %}

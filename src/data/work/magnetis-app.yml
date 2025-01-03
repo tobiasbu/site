@@ -7,3 +7,43 @@ company: magnetis
 slug: magnetis
 
 featuredImg: magnetis.jpg
+
+featuredMedia:
+  enabled: true
+  video: magnetis-feature-show-case
+  description: Showcase of an app feature that I've worked with on.
+  options:
+    containerStyle: "background-color: #17639d;"
+
+about: |-2
+    
+  As a senior software engineer, I focused on product maintenance, 
+  assisting mobile developers with issue resolution, improving CI/CD pipelines, 
+  addressing technical debts, writing internal documentation, and engaging in general mobile programming. 
+  Additionally, I developed new features for the company's application. I worked at Magnetis Investimentos 
+  for 1 year and 7 months.
+
+  **Update**: magnetis was sold to BTG Pactual ([news link](https://startups.com.br/negocios/ma/btg-pactual-compra-magnetis-para-reforcar-portfolio-digital/)). 
+  Unfortunately the app was removed from the stores.
+
+  ## Tech stack
+  - React Native
+  - TypeScript
+  - Node.js
+  - JavaScript
+  - Shell
+  - Objective-C
+  - Bash
+  - Kotlin
+  - Java
+  - Swift
+  - Design Patterns
+  - CI/CD
+  - e2e with capi and Appium
+  - AWS - Device Farm
+
+  Also a bit of:
+
+  - Python
+  - Ruby
+  - React.js
