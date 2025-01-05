@@ -1,0 +1,16 @@
+
+<footer>
+  <div class="tob-wrapper">
+    <div class="tob-footer-inner">
+      <p class="tob-copyright">© <time datetime="1992">1992</time> - <time datetime="{{ tob.builtAt.year }}">{{ tob.builtAt.year }}</time> <a href="/">Tobias Beise Ulrich</a></p>
+      <div class="tob-footer-social">
+
+        {% for social in meta.social %}
+          <a href="{{ social.url }}">
+          {% svg social.icon, "Tobias' " + social.name + " profile", "" %}
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</footer>

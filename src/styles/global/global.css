@@ -189,29 +189,3 @@ img, video {
   max-width: 100%;
 }
 
-/* FOOTER */
-
-footer {
-  margin-top: var(--tob-space-80);
-  padding: var(--tob-space-32);
-  /* background-color: var(--tob-theme-bg); */
-}
-
-@media (--tob-media-tablet) {
-  footer {
-    margin-top: var(--tob-space-64);
-    padding: var(--tob-space-24);
-  }
-}
-
-@media (--tob-media-phone) {
-  footer {
-    padding: var(--tob-space-16);
-  }
-}
-
-.tob-copyright {
-  margin: 0;
-  font-size: var(--tob-font-size-small);
-  color: var(--tob-theme-caption);
-}

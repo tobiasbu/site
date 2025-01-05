@@ -3,3 +3,13 @@ title: tobiasbu
 author: Tobias Ulrich
 description: A creative game developer
 email: tobiasbulrich@gmail.com
+social:
+  - name: itch.io
+    icon: itchio
+    url: https://tobiasbu.itch.io/
+  - name: GitHub
+    icon: github
+    url:  https://github.com/tobiasbu
+  - name: LinkedIn
+    icon: linkedin
+    url: https://www.linkedin.com/in/tobiasbu/
