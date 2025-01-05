@@ -11,3 +11,13 @@ video: tk-lift-builder
 style:
   transform: scale(1.05)
 
+about: |-2
+
+  As a freelancer, I developed the Home Lift Builder with ThreeJS for thyssenkrupp, 
+  creating a WebGL simulation that runs in-browser across all platforms. 
+  This project involved using TypeScript, three.js, and other tools. 
+  Additionally, I provided JavaScript consulting for the front-end team.
+
+  Note: The lift builder project was updated which I was not involved.
+  You can access it [here](https://homelift-configurator.tkelevator.com/).
+  The first version was removed.

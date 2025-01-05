@@ -9,15 +9,14 @@ favorites:
 highlights:
   grid: 4
   items:
-    - home-lift-builder
     - rhythmos-engine
     - magnetis-app
-    - inside
+    - package-man
+    - home-lift-builder
 
 others:
   grid: 5
   items:
-    - package-man
     - neo-bugreiro
     - scintilla
     - sword-and-shield
@@ -31,4 +30,5 @@ others:
     - cida-e-adao
     - robot-kombat
     - legend-of-zilda
+    - inside
     - diablo-rpg-maker
