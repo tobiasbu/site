@@ -35,12 +35,6 @@ permalink: "work/{{ (item.slug if item.slug else item.name) | slugify }}.html"
       {{ macro_work_date(item.date) }}
     </p>
   </header>
-  {# 
-  {% if item.awards %}
-    <ul class="tob-awards">
-      {{ item.awards | map(macro_award) | safe }}
-    </ul>
-  {% endif %} #}
 
   {% set workImg = "/assets/img/work/thumbnails/" + item.featuredImg %}
 

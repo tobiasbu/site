@@ -21,13 +21,12 @@ about: |-2
 
   As a Fullstack Engineer, I was deeply involved in:
 
-  - Developing user interfaces: Ensuring that the game was visually engaging and user-friendly.
-  - Integrating the business partner SDK: Seamlessly integrating the SDK from native code and exposing it in Unity.
-  - User Recovery Flow: Implementing the business partner login provider to recover user data from China.
-  - Payment System: Ensuring secure and efficient in-game transactions.
-  - Analytics: Improve UA flows for specific audiences.
+  - Ensuring that the metagame was visually engaging and user-friendly.
+  - Business partner SDK integration from native code and exposing it in Unity.
+  - Login provider implementation to recover user data from China.
+  - Payment System by ensuring secure and efficient in-game transactions.
 
-  ### Tech stack
+  ## Tech stack
 
   - Unity
   - C#

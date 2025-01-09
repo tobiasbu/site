@@ -15,31 +15,30 @@ featuredMedia:
   embedVideo: https://www.youtube.com/embed/PsBKjEJmge8
 
 about: |-2
-  Laserball is an electrifying digital game crafted for friends by the innovative minds at [Ideia à Vista](http://ideiaavista.com.br/) company. 
+  Laserball is an electrifying digital game crafted for friends by [Ideia à Vista](http://ideiaavista.com.br/) company. 
   
-  Imagine a futuristic indoor arena sport where two goalkeepers and two players — shaped like
-  sleek discs — battle it out with a smaller disc acting as the "ball". The mission? 
-  Score the most goals before time runs out. But there's a twist: monsters! 
-  Yes, one of three different monsters randomly appears to ramp up the challenge and add a whole lot of fun.
+  Imagine a futuristic, dystopian indoor arena sport where two 'disc' drivers battle it out against each other.
+  As the player, you need to score the most goals before time runs out. 
+  But there's a twist: monsters! 
+  Yes, one of three different monsters randomly appears to increase the challenge!
 
-  ### Gameplay highlights
+  {% figure "work/screenshots/laserball/laserball-machine.jpg","The Laserball arcade machine table" %}
+
+  The Laserball table blends the nostalgia of arcade games with cutting-edge technology.
+  It's a key part of [Game Pub](https://gamepub.ideiaavista.com/), Ideia à Vista's strategic
+  business initiative franchise of gamified pubs that redefine leisure and dining with exclusive digital gaming tables.
+  
+  ## Gameplay highlights
 
   * A thrilling mix of air hockey and snooker, with a monstrous twist!
   * Three different monsters randomly appear to make every match unpredictable and exhilarating.
   * Bet with your friend: play a game in bet mode and whoever wins gets a beer!
 
-  {% figure "work/screenshots/laserball/laserball-machine.jpg","The Laserball arcade machine table" %}
-
-  The Laserball table blends the nostalgia of arcade games with cutting-edge technology.
-  It's a key part of [Game Pub](https://gamepub.ideiaavista.com/), Ideia à Vista's strategic business initiative—a franchise of gamified pubs
-  that redefine leisure and dining with exclusive digital gaming tables.
+  ## My role
 
   As the game programmer on this project, I was responsible for bringing these features to life:
+
   * Crafting the enemies' AI to keep players on their toes.
-  * Implementing power-up abilities for that extra competitive edge.
-  * Designing intuitive menus and eye-catching splash screens to enhance the gaming experience.
-
-  So, gather your friends, grab some beers, and dive into the ultimate Laserball showdown. 
-  Fun and excitement guaranteed!
-
+  * Implementing power-up abilities for extra competitive edge.
+  * Designing intuitive menus and splash screens to enhance the gaming experience.
 

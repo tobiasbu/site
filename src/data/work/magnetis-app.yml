@@ -16,6 +16,9 @@ featuredMedia:
     containerStyle: "background-color: #17639d;"
 
 about: |-2
+  
+  Magnetis is the first fintech founded in Brazil.
+  Its mission is to impact people's lives and help them invest in what matters.
     
   As a senior software engineer, I focused on product maintenance, 
   assisting mobile developers with issue resolution, improving CI/CD pipelines, 
@@ -25,8 +28,9 @@ about: |-2
 
   **Update**: magnetis was sold to BTG Pactual ([news link](https://startups.com.br/negocios/ma/btg-pactual-compra-magnetis-para-reforcar-portfolio-digital/)). 
   Unfortunately the app was removed from the stores.
-
+  
   ## Tech stack
+  
   - React Native
   - TypeScript
   - Node.js

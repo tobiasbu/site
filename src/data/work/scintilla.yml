@@ -23,8 +23,7 @@ about: |-2
   modern JavaScript (ECMAScript 6) to improve its architecture and design.
 
   The engine is designed for the game development community, catering to both beginners and advanced developers. 
-  Scintilla provides a comprehensive system for creating prototypes, experimenting with ideas,
-  and developing art games, retro games, and more.
+  Scintilla provides a system for creating prototypes.
 
   ## Current Features
 
@@ -38,4 +37,3 @@ about: |-2
   - Includes easing functions and object validation.
   - Provides lists, maps, and sets.
   - Handles keyboard and mouse input.
-
